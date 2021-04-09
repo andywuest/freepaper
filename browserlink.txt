@@ -1,0 +1,7 @@
+javascript:function%20optimize()%20{%20var%20d%20=%20document,%20l%20=%20d.location;l.href%20=%20'http://localhost:9191/FreepaperOptimizerServlet?url='%20+%20encodeURIComponent(l.href)%20+%20'&t='%20+%20(new%20Date().getTime());}%20javascript:optimize();%20javascript:void%20(0)
+
+http://localhost:9191/stories
+
+
+
+

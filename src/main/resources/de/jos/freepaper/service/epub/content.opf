@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="2.0" unique-identifier="PrimaryID">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" 
+              xmlns:opf="http://www.idpf.org/2007/opf" 
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier id="PrimaryID" opf:scheme="URN">urn:uuid:${uuid}</dc:identifier>
+      <dc:title>Freepaper: Tuesday, Mar. 13th</dc:title>  
+      <dc:creator>Freepaper by Andreas Wuest</dc:creator>
+      <dc:language>de</dc:language>
+      <dc:source>Freepaper</dc:source>
+      <dc:date xsi:type="dcterms:W3CDTF">2018-03-13T05:17:12</dc:date>
+    </metadata>
+    
+    <manifest>
+        <item id="cover" href="cover.html" media-type="application/xhtml+xml" />
+        <item id="toc" href="toc.html" media-type="application/xhtml+xml"/>
+        
+        <#list stories as story>
+            <item id="story${story?index}" href="story${story?index}.html" media-type="application/xhtml+xml"/>
+        </#list>        
+        
+        <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+        
+    </manifest>
+    <spine toc="ncx">
+        <itemref idref="cover" />
+        <itemref idref="toc"/>
+        
+        <#list stories as story>
+            <itemref idref="story${story?index}"/>
+        </#list>        
+        
+    </spine>
+    <guide>
+        <reference type="cover" title="Cover" href="cover.html"/>
+        <reference type="toc" title="Table of Contents" href="toc.html"/>
+        
+        <reference type="start" title="Start" href="story0.html"/>
+        
+        <#list stories as story>
+            <reference type="text" title="${story.title}" href="story${story?index}.html"/>
+        </#list>        
+        
+        <reference type="text" title="" href="story0.html"/>
+    </guide>
+</package>

@@ -1,0 +1,7 @@
+proxyHost: 
+proxyPort: 
+
+server:
+  applicationConnectors:
+    - type: http
+      port: 9191

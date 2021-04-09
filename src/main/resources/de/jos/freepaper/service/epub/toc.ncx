@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" xmlns:mbp="http://www.mobipocket.com" version="2005-1" xml:lang="en">
+  <head>
+    <meta name="dtb:uid" content="urn:uuid:${uuid}"/>
+  </head>  
+  <docTitle>
+    <text>FreePaper</text>
+  </docTitle>    
+  <navMap>
+  <#list stories as story>
+    <navPoint id="story${story?index}" playOrder="${story?index + 1}">
+      <navLabel><text>${story.title}</text></navLabel>
+      <content src="story${story?index}.html"/>
+    </navPoint>
+  </#list>
+  </navMap>
+  
+</ncx>
+
