@@ -10,18 +10,9 @@ import org.junit.Test;
  */
 public class ManagerMagazinTest extends AbstractPageTest {
 
-    String URL = "http://www.manager-magazin.de/unternehmen/autoindustrie/norwegen-investoren-bauen-fabrik-fuer-wunder-diesel-a-1156215.html";
-    String PRINT_URL = "http://www.manager-magazin.de/unternehmen/autoindustrie/norwegen-investoren-bauen-fabrik-fuer-wunder-diesel-a-1156215-druck.html";
+    String URL = "https://www.manager-magazin.de/finanzen/versicherungen/riester-und-ruerup-rente-durch-zwangsversicherung-zur-rentenkuerzung-a-d897dac4-f273-41d9-81a3-f2a6286489f2";
 
     private final SupportedPage page = new ManagerMagazin();
-    
-    @Test
-    public void getPrintUrl_shouldReturnPrintUrl() {
-        final String printUrl = page.getPrintURL(URL);
-        final String expectedUrl = PRINT_URL;
-
-        assertThat(printUrl).isEqualTo(expectedUrl);
-    }
 
     @Test
     public void getDownload() {

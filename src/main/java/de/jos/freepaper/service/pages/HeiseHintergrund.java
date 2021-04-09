@@ -40,6 +40,8 @@ public class HeiseHintergrund extends SupportedPage {
                 "a-collapse", // special tag
                 "a-teaser", // special tag
                 "a-lightbox", // special tag
+                "a-login", //
+                "a-paternoster", //
                 "time", //
                 "figure", //
                 "img", //
