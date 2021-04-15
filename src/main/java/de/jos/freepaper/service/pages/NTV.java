@@ -1,11 +1,11 @@
 package de.jos.freepaper.service.pages;
 
 import de.jos.freepaper.service.SupportedPage;
+
 import java.util.Arrays;
 import java.util.List;
 
 /**
- *
  * @author awuest
  */
 public class NTV extends SupportedPage {
@@ -42,6 +42,7 @@ public class NTV extends SupportedPage {
                 ".title--dark", //
                 ".teaser--video", //
                 ".article__author", //
+                "section.sitemap", //
                 ".sidebar" //
         );
     }
