@@ -89,6 +89,7 @@ public class JSoupDownload {
 
             System.out.println("===> Remove Attributes of Tag !");
             removeAllAttributesOfTag(doc, "a");
+            removeAllAttributesOfTag(doc, "h1");
             removeAllAttributesOfTag(doc, "h2");
             removeAllAttributesOfTag(doc, "h3");
             removeAllAttributesOfTag(doc, "br");
@@ -99,11 +100,7 @@ public class JSoupDownload {
             removeAllAttributesOfTag(doc, "div");
             removeAllAttributesOfTag(doc, "span");
             removeAllAttributesOfTag(doc, "section");
-            removeAllAttributesOfTag(doc, "a-script"); // heise
-            removeAllAttributesOfTag(doc, "a-ad");  // heise
-            removeAllAttributesOfTag(doc, "a-analytics"); // heise
-            removeAllAttributesOfTag(doc, "a-collapse"); // heise
-            removeAllAttributesOfTag(doc, "a-script");
+            removeAllAttributesOfTag(doc, "ul"); // handelsblatt
             removeAllAttributesOfTag(doc, "li"); // handelsblatt
             removeAllAttributesOfTag(doc, "p"); // handelsblatt
             removeAllAttributesOfTag(doc, "main"); // jetzt.de
