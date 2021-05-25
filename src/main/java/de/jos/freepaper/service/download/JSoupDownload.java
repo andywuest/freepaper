@@ -159,6 +159,7 @@ public class JSoupDownload {
             htmlBodyOnly = htmlBodyOnly.replaceAll("<main>", "").replaceAll("</main>", "");
             htmlBodyOnly = htmlBodyOnly.replaceAll("<time>", "").replaceAll("</time>", "");
             htmlBodyOnly = htmlBodyOnly.replaceAll("<h3>", "").replaceAll("</h3>", "");
+            htmlBodyOnly = htmlBodyOnly.replaceAll("<cite>", "").replaceAll("</cite>", "");
             htmlBodyOnly = htmlBodyOnly.replaceAll("<jsp:text>", "").replaceAll("</jsp:text>", "").replaceAll("<jsp:text />", "");
 
             if (page.removeAllLinks()) {

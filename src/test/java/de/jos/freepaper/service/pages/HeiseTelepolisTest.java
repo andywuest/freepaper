@@ -11,7 +11,7 @@ public class HeiseTelepolisTest extends AbstractPageTest {
 
     final SupportedPage page = new HeiseTelepolis();
 
-    private static final String URL = "https://www.heise.de/tp/features/CDU-CSU-SPD-und-FDP-einigen-sich-auf-Diaetenerhoehung-3916382.html";
+    private static final String URL = "https://www.heise.de/tp/features/Doppelstandards-am-europaeischen-Himmel-6052829.html";
 
     @Test
     public void getDownload() {

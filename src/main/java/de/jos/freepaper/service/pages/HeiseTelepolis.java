@@ -25,13 +25,17 @@ public class HeiseTelepolis extends SupportedPage  {
         final List<String> result = super.getRemovableElements();
         result.addAll(Arrays.asList( //
           "meta[name*='']", //
+          "meta[property*='']", //
+          "meta[http-equiv*='']", //
           "link[rel*='']", //
           "nav", //
+          "a-analytics", // special tag
           ".heisetopnavi", //
           ".printversion__back-to-article", //
           "#navi_bottom", //
           "style", //
           "img", //
+          "svg", //
           "script", //
           "noscript", //
           "figure" //
