@@ -35,6 +35,8 @@ public class MMNews extends SupportedPage {
           "link[href*='']", //
           "style", //
           ".a2a_kit", //
+          ".sp-right", //
+          ".sp-left", //
           "script", //
           ".article-footer-wrap", //
           ".article-info-wrapper", //

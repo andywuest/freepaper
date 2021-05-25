@@ -34,11 +34,13 @@ public class ManagerMagazin extends SupportedPage {
                 "noscript", //
                 "style", //
                 "svg", //
+                "button", //
                 "ul", //
                 "img", //
                 "figure", //
                 "aside", //
                 "section[data-app-hidden*='']", //
+                "div[data-component*='GalleryTeaser']", //
                 "iframe", //
                 "footer"
         );

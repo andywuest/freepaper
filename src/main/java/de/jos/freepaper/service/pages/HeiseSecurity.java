@@ -35,6 +35,7 @@ public class HeiseSecurity extends SupportedPage {
                 "footer", //
                 "script", //
                 "a-script", // special tag
+                "a-collapse", // special tag
                 "#navi_bottom", //
                 "#mitte_rechts", //
                 ".adbottom", //

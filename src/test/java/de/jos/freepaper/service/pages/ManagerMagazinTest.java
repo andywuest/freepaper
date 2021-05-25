@@ -10,7 +10,7 @@ import org.junit.Test;
  */
 public class ManagerMagazinTest extends AbstractPageTest {
 
-    String URL = "https://www.manager-magazin.de/finanzen/versicherungen/riester-und-ruerup-rente-durch-zwangsversicherung-zur-rentenkuerzung-a-d897dac4-f273-41d9-81a3-f2a6286489f2";
+    String URL = "https://www.manager-magazin.de/unternehmen/autoindustrie/elektroauto-foerderungen-in-usa-wie-sich-deutsche-autobauer-auf-joe-bidens-infrastruktur-plan-vorbereiten-a-6f7f3ad7-60f5-48ec-b075-65ec7b7aa31c";
 
     private final SupportedPage page = new ManagerMagazin();
 

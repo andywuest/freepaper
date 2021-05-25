@@ -35,6 +35,7 @@ public class HeiseDeveloper extends SupportedPage {
                 "link[rel*='']", //
                 "footer", //
                 "a-ad", // special tag
+                "a-collapse", // special tag
                 "a-script", // special tag
                 "a-analytics", // special tag
                 "time", //
