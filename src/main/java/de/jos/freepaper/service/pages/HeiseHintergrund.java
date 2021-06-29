@@ -33,7 +33,9 @@ public class HeiseHintergrund extends SupportedPage {
                 "meta[name*='']", //
                 "meta[property*='']", //
                 "link[rel*='']", //
+                "header", //
                 "footer", //
+                "style", //
                 "a-ad", // special tag
                 "a-script", // special tag
                 "a-analytics", // special tag
@@ -54,6 +56,7 @@ public class HeiseHintergrund extends SupportedPage {
                 ".breadcrumb", //
                 ".adbottom", //
                 "#sitemap", //
+                ".bottom_up", //
                 "#navi_bottom", //
                 "script", //
                 "aside", //
