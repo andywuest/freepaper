@@ -11,7 +11,7 @@ public class StuttgarterZeitungTest extends AbstractPageTest {
 
     final SupportedPage page = new StuttgarterZeitung();
 
-    private static final String URL = "https://www.stuttgarter-zeitung.de/inhalt.antiflirting-stuttgarterin-veroeffentlicht-uebergriffige-chatverlaeufe.0249422e-ced1-460a-a653-4b463db9290e.html";
+    private static final String URL = "https://www.stuttgarter-zeitung.de/inhalt.nachtleben-am-schlossplatz-stuttgarter-meiden-die-innenstadt.fdbc86d1-5430-4232-8f2d-90fbabd6dc74.html";
 
     @Test
     public void getDownload() {

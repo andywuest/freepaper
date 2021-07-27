@@ -37,6 +37,8 @@ public class TheGuardian extends SupportedPage {
         elements.add("figcaption");
         elements.add("picture");
         elements.add("figure");
+        elements.add("img");
+        elements.add("div[data-print-layout='hide']");
         elements.add(".submeta__links");
         elements.add(".submeta__links");
         elements.add(".element--thumbnail");

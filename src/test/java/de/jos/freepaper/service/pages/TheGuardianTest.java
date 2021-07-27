@@ -12,7 +12,7 @@ public class TheGuardianTest extends AbstractPageTest {
 
     final SupportedPage page = new TheGuardian();
 
-    private static final String URL = "https://www.theguardian.com/film/2019/apr/11/geoffrey-rush-defamation-case-actor-millions-news-corp-nationwide";
+    private static final String URL = "https://www.theguardian.com/news/2021/jul/19/edward-snowden-calls-spyware-trade-ban-pegasus-revelations";
 
     @Test
     public void getDownload() {
