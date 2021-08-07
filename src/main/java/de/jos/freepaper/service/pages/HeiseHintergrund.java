@@ -48,6 +48,7 @@ public class HeiseHintergrund extends SupportedPage {
                 "figure", //
                 "img", //
                 "svg", //
+                "template", //
                 ".heisetopnavi_login", //
                 ".heisetopnavi_hover_legacy", //
                 ".readspeaker-link", //
