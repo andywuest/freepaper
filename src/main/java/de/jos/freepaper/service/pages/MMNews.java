@@ -45,6 +45,7 @@ public class MMNews extends SupportedPage {
           "#taboola-below-article-thumbnails",
           "ins", //
           "img", //
+          "center", //
           "ul" //
         ));
         return result;

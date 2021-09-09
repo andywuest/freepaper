@@ -11,7 +11,7 @@ public class MMnewsTest extends AbstractPageTest {
 
     private final SupportedPage page = new MMNews();
 
-    private static final String URL = "http://www.mmnews.de/politik/28421-die-fachkraefte-luege";
+    private static final String URL = "https://www.mmnews.de/wirtschaft/170012-flucht-aus-deutschland-bei-rot-rot-gruen";
 
     @Test
     public void getDownload() {
