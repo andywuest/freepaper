@@ -29,6 +29,7 @@ public class HeiseMeinung extends SupportedPage {
                 "script", //
                 "a-collapse", //
                 "a-script", //
+                "a-ad", //
                 "img", //
                 "svg", //
                 "figure", //
