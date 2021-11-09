@@ -7,7 +7,7 @@ public class HeiseMeinungTest extends AbstractPageTest {
 
     final SupportedPage page = new HeiseMeinung();
 
-    private static final String URL = "https://www.heise.de/meinung/Alle-reden-von-Clustern-nur-die-Corona-App-nicht-4951026.html";
+    private static final String URL = "https://www.heise.de/meinung/Der-toedliche-Rattenschwanz-der-Impfverweigerung-6260139.html";
 
     @Test
     public void getDownload() {

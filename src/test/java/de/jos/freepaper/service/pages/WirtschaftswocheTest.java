@@ -11,7 +11,7 @@ public class WirtschaftswocheTest extends AbstractPageTest {
 
     private final SupportedPage page = new Wirtschaftswoche();
 
-    private static final String URL = "https://www.wiwo.de/erfolg/management/dsw-aufsichtsratsstudie-2020-aufsichtsraete-fuerstlich-bezahlt-so-maechtig-wie-nie-zuvor/26593290.html";
+    private static final String URL = "https://www.wiwo.de/beruehmter-kaseya-hack-tausende-cyber-attacken-ermittler-nehmen-mehrere-verdaechtige-fest/27781028.html";
 
     @Test
     public void getDownload() {

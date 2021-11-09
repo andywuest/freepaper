@@ -45,6 +45,7 @@ public class Wirtschaftswoche extends SupportedPage {
                 "img", //
                 "link", //
                 "picture", //
+                "svg", //
                 "video", //
                 "style", //
                 "script", //
@@ -60,6 +61,8 @@ public class Wirtschaftswoche extends SupportedPage {
                 ".u-listdot-artikelbox", //
                 ".c-teaser--type-article", //
                 ".c-icon--doctype-imagegallery", //
+                ".c-advertisment__fullWidth", //
+                ".o-article__content-element--articlelbox", //
                 ".c-gallery__item-title" //
         );
     }

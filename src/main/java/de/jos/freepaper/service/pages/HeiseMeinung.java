@@ -25,6 +25,9 @@ public class HeiseMeinung extends SupportedPage {
                 "meta[property*='']", //
                 "link[rel*='']", //
                 "style", //
+                "meta", //
+                "script", //
+                "a-collapse", //
                 "a-script", //
                 "img", //
                 "svg", //
