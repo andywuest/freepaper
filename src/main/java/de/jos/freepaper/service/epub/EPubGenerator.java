@@ -48,10 +48,6 @@ public class EPubGenerator {
             new EPubFileDto("", "content.opf", true) //
     );
 
-    public EPubGenerator() {
-
-    }
-
     public void generate(List<StoryDto> stories, OutputStream out) {
         final UUID uuid = UUID.randomUUID();
 
@@ -78,7 +74,7 @@ public class EPubGenerator {
                 final String fileNameInZip = epubFile.getDirectory() + epubFile.getName();
 
                 final String contentToWrite;
-                if (epubFile.isIsTemplate()) {
+                if (epubFile.isTemplate()) {
                     final Template template = cfg.getTemplate(epubFile.getName());
                     final Writer stringWriter = new StringWriter();
                     template.process(input, stringWriter);
@@ -91,16 +87,19 @@ public class EPubGenerator {
 
                 System.out.println("result : " + contentToWrite);
 
-                ZipEntry ze = new ZipEntry(fileNameInZip);
+                final ZipEntry zipEntry = new ZipEntry(fileNameInZip);
 
                 if ("mimetype".equals(epubFile.getName())) {
-                    zout.setLevel(Deflater.NO_COMPRESSION);
-                    zout.setMethod(ZipOutputStream.DEFLATED);
+                    // see https://stackoverflow.com/questions/7062789/using-java-util-zip-to-construct-valid-epub
+                    zipEntry.setMethod(ZipEntry.STORED);
+                    zipEntry.setSize(20);
+                    zipEntry.setCompressedSize(20);
+                    zipEntry.setCrc(0x2CAB616F); // pre-computed
                 } else {
                     zout.setLevel(Deflater.BEST_COMPRESSION);
                     zout.setMethod(ZipOutputStream.DEFLATED);
                 }
-                zout.putNextEntry(ze);
+                zout.putNextEntry(zipEntry);
 
                 byte[] data = contentToWrite.getBytes();
                 zout.write(data, 0, data.length);

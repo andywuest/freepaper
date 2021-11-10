@@ -40,7 +40,5 @@
         <#list stories as story>
             <reference type="text" title="${story.title}" href="story${story?index}.html"/>
         </#list>        
-        
-        <reference type="text" title="" href="story0.html"/>
     </guide>
 </package>
