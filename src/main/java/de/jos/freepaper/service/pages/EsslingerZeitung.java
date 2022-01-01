@@ -13,7 +13,7 @@ public class EsslingerZeitung extends SupportedPage {
 
     @Override
     public String getName() {
-        return "esslinger-zeitungdwdl.de";
+        return "esslinger-zeitung.de";
     }
 
     @Override
