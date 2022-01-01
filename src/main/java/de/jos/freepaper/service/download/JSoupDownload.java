@@ -105,7 +105,6 @@ public class JSoupDownload {
             removeAllAttributesOfTag(doc, "p"); // handelsblatt
             removeAllAttributesOfTag(doc, "main"); // jetzt.de
             removeAllAttributesOfTag(doc, "time"); // bento.de
-            removeAllAttributesOfTag(doc, "jsp:text"); // handelsblatt.de
             removeAllAttributesOfTag(doc, "blockquote"); // focus.de - huffpost
 
             System.out.println("===> Remove all data- / itemprop attributes");
@@ -121,6 +120,7 @@ public class JSoupDownload {
                 if (page.removeEmptyTags()) {
                     for (Element element : doc.select("*")) {
                         if (!element.hasText() && element.isBlock() && !"meta".equalsIgnoreCase(element.nodeName())) {
+                            System.out.println("removing " + element.nodeName());
                             element.remove();
                             foundEmptyTags = true;
                             count++;
@@ -145,6 +145,7 @@ public class JSoupDownload {
             System.out.println("===> fixing broken tags ");
             htmlBodyOnly = htmlBodyOnly.replaceAll("<br>", "<br/>");
             htmlBodyOnly = htmlBodyOnly.replaceAll("<hr>", "<hr/>");
+            htmlBodyOnly = htmlBodyOnly.replaceAll("<hr>", "<hr/>");
 
             // if we have an article - there must no div be contained
             if (page.supportsArticle() && elementsByTag.size() == 1) {
@@ -162,12 +163,16 @@ public class JSoupDownload {
             htmlBodyOnly = htmlBodyOnly.replaceAll("<cite>", "").replaceAll("</cite>", "");
             htmlBodyOnly = htmlBodyOnly.replaceAll("<jsp:text>", "").replaceAll("</jsp:text>", "").replaceAll("<jsp:text />", "");
 
+            final HtmlCleanUp htmlCleanUp = new HtmlCleanUp();
+
             if (page.removeAllLinks()) {
-                html = html.replaceAll("</a>", "").replaceAll("<a>", "");
-                htmlBodyOnly = htmlBodyOnly.replaceAll("</a>", "").replaceAll("<a>", "");
+                html = htmlCleanUp.removeAllLinks(html);
+                htmlBodyOnly = htmlCleanUp.removeAllLinks(htmlBodyOnly);
             }
 
-            htmlBodyOnly = htmlBodyOnly.replaceAll("(?m)^[ \t]*\r?\n", "").replaceAll("\\s*\r?\n", "");
+//            htmlBodyOnly = htmlBodyOnly.replaceAll("(?m)^[ \t]*\r?\n", "").replaceAll("\\s*\r?\n", "");
+
+            htmlBodyOnly = htmlCleanUp.removeAllEmptyTags(htmlBodyOnly);
 
             System.out.println("document : \n" + html);
             System.out.println("document body : \n" + htmlBodyOnly);

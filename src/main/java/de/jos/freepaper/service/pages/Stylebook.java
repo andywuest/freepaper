@@ -39,8 +39,11 @@ public class Stylebook extends SupportedPage {
         elements.add("aside");
         elements.add(".footer__headline");
         elements.add(".footer");
+        elements.add(".shariff");
+        elements.add("[class^=affiliate]");
         elements.add(".nav-bottom__list");
         elements.add(".mashsb-container");
+        elements.add(".social-sharing-popup__container");
         return elements;
     }
 

@@ -29,6 +29,7 @@ public class EsslingerZeitung extends SupportedPage {
         elements.add("script");
         elements.add("figure");
         elements.add("img");
+        elements.add("#article-social-bar");
         elements.add(".article-related");
         elements.add(".article-social-bottom");
         elements.add(".article-bottom-wrapper");

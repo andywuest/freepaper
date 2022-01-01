@@ -8,7 +8,7 @@ public class EsslingerZeitungTest extends AbstractPageTest {
 
     private final SupportedPage page = new EsslingerZeitung();
 
-    private static final String URL = "https://www.esslinger-zeitung.de/inhalt.tierpark-nymphaea-uhus-im-tierpark-geraten-in-umzugsstress.99e781cc-cf58-4431-be17-39fe58072325.html";
+    private static final String URL = "https://www.esslinger-zeitung.de/inhalt.ice-strecke-nach-ulm-tempolimit-auf-der-neuen-ice-strecke.b1beaeb8-01ff-477c-ad38-23feef272a7f.html";
 
     @Test
     public void getDownload() {

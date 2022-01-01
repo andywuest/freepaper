@@ -11,7 +11,7 @@ public class StylebookTest extends AbstractPageTest {
 
     final SupportedPage page = new Stylebook();
 
-    private static final String URL = "https://www.stylebook.de/love/paartherapeut-ueber-getrennte-betten-in-der-beziehung";
+    private static final String URL = "https://www.stylebook.de/body-health/libido-und-pms-pandemie";
 
     @Test
     public void getDownload() {
