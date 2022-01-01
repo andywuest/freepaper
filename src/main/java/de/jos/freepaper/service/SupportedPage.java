@@ -31,7 +31,8 @@ public abstract class SupportedPage {
     public List<String> getRemovableElements() {
         return new ArrayList<>(Arrays.asList(
                 "iframe",
-                "form"
+                "form",
+                "button"
         ));
     }
 
