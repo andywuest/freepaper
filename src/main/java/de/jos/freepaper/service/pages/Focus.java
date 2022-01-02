@@ -53,6 +53,7 @@ public class Focus extends SupportedPage {
           ".textFazit", //
           ".authorList", //
           ".instagram-media", //
+          ".affiliate_info", //
           ".noads", //
           ".textPDF", //
           "#footer"

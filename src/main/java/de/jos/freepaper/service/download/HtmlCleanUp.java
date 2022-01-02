@@ -11,7 +11,10 @@ public class HtmlCleanUp {
     }
 
     public String removeEmptyTags(String source) {
-        String result = source.replaceAll("<div>\\s*</div>", "");
+        String result = source.replaceAll("<div>\\s*</div>", "")
+                .replaceAll("<li>\\s*</li>", "")
+                .replaceAll("<ul>\\s*</ul>", "")
+                .replaceAll("<a>\\s*</a>", "");
         return result;
     }
 
