@@ -1,7 +1,6 @@
 <#-- @ftlvariable name="story" type="de.jos.freepaper.service.epub.StoryDto" -->
+<!DOCTYPE html>
 <html>
-<head>
-</head>
 <body>
 
 <a href="/EPubDownloadServlet" target="_blank">Download</a>
