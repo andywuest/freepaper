@@ -16,7 +16,9 @@ public class HtmlCleanUp {
                 .replaceAll("<ul>\\s*</ul>", "")
                 .replaceAll("<strong>\\s*</strong>", "")
                 .replaceAll("<p>\\s*</p>", "")
-                .replaceAll("<a>\\s*</a>", "");
+                .replaceAll("<i>\\s*</i>", "")
+                .replaceAll("<a>\\s*</a>", "")
+                .replaceAll("<span>\\s*</span>", "");
         return result;
     }
 

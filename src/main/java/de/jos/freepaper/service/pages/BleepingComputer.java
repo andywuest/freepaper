@@ -32,6 +32,7 @@ public class BleepingComputer extends SupportedPage {
                         "noscript", //
                         "header", //
                         "footer", //
+                        "meta", //
                         ".bc_goto_top", //
                         ".bc_right_sidebar", //
                         ".bc_login_form", //
@@ -49,6 +50,10 @@ public class BleepingComputer extends SupportedPage {
         return removableElements;
     }
 
+    @Override
+    public boolean removeAllLinks() {
+        return true;
+    }
 }
 
 
