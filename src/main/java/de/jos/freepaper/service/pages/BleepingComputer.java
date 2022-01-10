@@ -30,6 +30,7 @@ public class BleepingComputer extends SupportedPage {
                         "link[rel*='']", //
                         "script", //
                         "noscript", //
+                        "figure", //
                         "header", //
                         "footer", //
                         "meta", //
