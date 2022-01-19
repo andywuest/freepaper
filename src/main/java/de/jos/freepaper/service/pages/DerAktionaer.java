@@ -32,6 +32,8 @@ public class DerAktionaer extends SupportedPage {
                 "script", //
                 "noscript", //
                 "blockquote", //
+                "img", //
+                "table", //
                 "footer", //
                 "header", //
                 "#similar-product", //
