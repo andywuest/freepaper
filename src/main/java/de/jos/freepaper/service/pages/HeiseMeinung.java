@@ -28,6 +28,7 @@ public class HeiseMeinung extends SupportedPage {
                 "meta", //
                 "script", //
                 "a-collapse", //
+                "a-analytics", //
                 "a-script", //
                 "a-ad", //
                 "img", //
