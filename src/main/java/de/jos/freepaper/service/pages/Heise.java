@@ -37,6 +37,7 @@ public class Heise extends SupportedPage {
                 "time", //
                 "inline", //
                 "a-script", //
+                "a-iframe", //
                 "a-ad", //
                 "a-collapse", //
                 "a-login", //

@@ -42,6 +42,8 @@ public class Focus extends SupportedPage {
           "script", //
           "noscript", //
           "style", //
+          "fieldset", //
+          "legend", //
           "img", //
           "svg", //
           "form", //
