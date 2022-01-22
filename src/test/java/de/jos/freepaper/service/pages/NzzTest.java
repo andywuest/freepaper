@@ -11,7 +11,7 @@ public class NzzTest extends AbstractPageTest {
 
     private final SupportedPage page = new Nzz();
 
-    private static final String URL = "https://www.nzz.ch/international/das-internet-bekommt-eine-neue-generation-nutzer-ld.1506888?mktcid=smsh&mktcval=OS%20Share%20Hub";
+    private static final String URL = "https://www.nzz.ch/feuilleton/mattias-tesfaye-die-juedischen-schulen-aber-auch-die-gemeinden-sind-in-einem-masse-mit-antisemitismus-konfrontiert-das-es-frueher-nicht-gab-und-das-ist-wegen-der-migration-ld.1665481";
 
     @Test
     public void getDownload() {

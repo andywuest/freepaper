@@ -35,9 +35,10 @@ public class Nzz extends SupportedPage {
         elements.add("meta[name*='']");
         elements.add("meta[property*='']");
         elements.add("link[rel*='']");
-        elements.add("nav");
-        elements.add("header");
-        elements.add("footer");
+        elements.add("#header");
+        elements.add("#footer");
+        elements.add(".headline__meta");
+        elements.add(".pageelement--moretosubject");
         elements.add("svg");
         elements.add("figure");
         elements.add("button");
