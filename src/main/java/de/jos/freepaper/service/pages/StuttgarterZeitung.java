@@ -40,6 +40,7 @@ public class StuttgarterZeitung extends SupportedPage {
                 "#elastic-recommendation",
                 "#traffectiveCustomCSS",
                 "#article-share-content",
+                "div[style='display:none']",
                 ".box-author", //
                 ".imod-teaser-fullwidth", //
                 ".printHeader" //

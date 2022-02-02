@@ -30,6 +30,7 @@ public class NTV extends SupportedPage {
                 "script", //
                 "noscript", //
                 "figure", //
+                "img", //
                 "header", //
                 "footer", //
                 "nav", //

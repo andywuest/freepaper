@@ -58,6 +58,8 @@ public class Focus extends SupportedPage {
           ".affiliate_info", //
           ".noads", //
           ".textPDF", //
+          ".m-conclusion-box", //
+          "#print_image_info", //
           "#footer"
         );
     }

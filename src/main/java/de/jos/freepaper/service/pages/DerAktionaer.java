@@ -42,21 +42,9 @@ public class DerAktionaer extends SupportedPage {
                 "#article-detail-symbol", //
                 "#article-detail-further", //
                 ".article-image", //
-                ".article-chart " //
-//                "svg", //
-//                "nav", //
-//                ".evo-post-meta", //
-//                ".evo-post-image", //
-//                ".evo-tags", //
-//                ".evo-comment-list", //
-//                ".evo-sidebar", //
-//                ".evo-carousel-b", //
-//                ".evo-related-posts", //
-//                ".evo-post-directions", //
-//                ".evo-search-holder", //
-//                ".evo-trending-holder", //
-//                "header", //
-//                "footer" //
+                ".article-chart", //
+                "#werte-title", //
+                ".related-articles" //
         );
     }
 
