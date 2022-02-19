@@ -30,16 +30,25 @@ public class Stern extends SupportedPage {
                 "meta[itemprop*='']", //
                 "link[rel*='']", //
                 "header", //
+                "style", //
                 "x-drawer", //
+                "footer", //
                 "nav", //
                 "iframe", //
                 "script", //
                 "noscript", //
+                "figure", //
+                "time", //
+                "x-gallery-scroller", //
                 ".breadcrumb", //
                 ".group__embedded-teasers", //
                 ".article__end", //
                 ".article__sidebar", //
                 ".article__tags", //
+                ".teaser__headline-wrapper", //
+                ".article__text-element--blockquote", //
+                ".group-teaserblock__item", //
+                ".group-teaser-image-gallery", //
                 "img" //
         ));
 
