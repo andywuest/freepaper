@@ -23,6 +23,7 @@ public class StuttgarterZeitung extends SupportedPage {
                 "meta[property*='']", //
                 "meta[http-equiv*='']", //
                 "link[rel*='']", //
+                "link", //
                 "script", //
                 "style", //
                 "aside", //
@@ -47,4 +48,8 @@ public class StuttgarterZeitung extends SupportedPage {
         return url;
     }
 
+    @Override
+    public boolean removeAllLinks() {
+        return true;
+    }
 }
