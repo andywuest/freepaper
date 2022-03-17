@@ -35,6 +35,7 @@ public class NTV extends SupportedPage {
                 "footer", //
                 "nav", //
                 "style", //
+                "select", //
                 ".article__share--meldung", //
                 ".article__aside--extcontent", //
                 ".article__aside--right", //

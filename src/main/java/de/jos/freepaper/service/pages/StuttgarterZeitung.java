@@ -1,11 +1,11 @@
 package de.jos.freepaper.service.pages;
 
 import de.jos.freepaper.service.SupportedPage;
+
 import java.util.Arrays;
 import java.util.List;
 
 /**
- *
  * @author awuest
  */
 public class StuttgarterZeitung extends SupportedPage {
@@ -28,22 +28,17 @@ public class StuttgarterZeitung extends SupportedPage {
                 "aside", //
                 "noscript", //
                 "figure", //
-                "iframe", //
-                "dig-plugin", //
+                "svg", //
                 "img", //
                 "nav", //
-                "header", //
+                "form", //
+                "iframe", //
                 "footer", //
-                "button", //
-                ".adv", //
-                ".container-stz-popup", //
-                "#elastic-recommendation",
-                "#traffectiveCustomCSS",
-                "#article-share-content",
-                "div[style='display:none']",
-                ".box-author", //
-                ".imod-teaser-fullwidth", //
-                ".printHeader" //
+                "[data-noprint='true']", //
+                "[style='display:none']", //
+                ".mod-header-new", //
+                ".bottom-nav", //
+                ".art-tags" //
         );
     }
 
