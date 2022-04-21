@@ -57,6 +57,7 @@ public class Wirtschaftswoche extends SupportedPage {
                 ".u-desktop-hidden", //
                 ".u-mobile-hidden", //
                 ".js-headline", //
+                ".c-teaser", //
                 ".c-metadata", //
                 ".u-listdot-artikelbox", //
                 ".c-teaser--type-article", //
