@@ -33,11 +33,13 @@ public class HeiseTestSection extends SupportedPage {
           "link[rel*='']", //
           "nav", //
           ".heisetopnavi", //
+          ".printversion--hide", //
           "#navi_bottom", //
           "style", //
           "img", //
           "svg", //
           "a-script", // special tag
+          "a-ad", // special tag
           "a-collapse", // special tag
           "a-bilderstrecke", // special tag
           "script", //
