@@ -32,6 +32,8 @@ public abstract class SupportedPage {
         return new ArrayList<>(Arrays.asList(
                 "iframe",
                 "form",
+                "noscript",
+                "iframe",
                 "button"
         ));
     }
