@@ -35,6 +35,7 @@ public class StuttgarterZeitung extends SupportedPage {
                 "form", //
                 "iframe", //
                 "footer", //
+                "dig-plugin", //
                 "[data-noprint='true']", //
                 "[style='display:none']", //
                 ".mod-header-new", //

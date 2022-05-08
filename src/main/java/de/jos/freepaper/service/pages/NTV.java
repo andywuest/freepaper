@@ -47,6 +47,8 @@ public class NTV extends SupportedPage {
                 ".article__author", //
                 ".article__audio-share", //
                 "section.sitemap", //
+                ".linklist", //
+                ".newcontent-note", //
                 ".sidebar" //
         );
     }
