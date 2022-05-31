@@ -29,12 +29,23 @@ public class FourInvestors extends SupportedPage {
                 "meta[property*='']", //
                 "meta[http-equiv*='']", //
                 "link[rel*='']", //
+                "style", //
                 "header", //
                 "footer", //
                 "img", //
                 "ins", //
+                "#sidebar", //
                 ".nav.nav-tabs", //
+                ".breadcrumbs", //
+                ".news-meta", //
+                ".tradingview-widget-container", //
+                ".contentempfehlung", //
+                ".newsletter", //
+                ".advertisement", //
+                ".news-overview", //
+                ".news.special", //
                 "form", //
+                "figure", //
                 "script" //
         ));
         return result;
