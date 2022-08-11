@@ -43,6 +43,12 @@ public class Welt extends SupportedPage {
           ".c-breadcrumb", //
           ".c-channel-navigation", //
           ".c-social-bar__icon-link", //
+          ".c-breaking__fallback", //
+          ".ob-smartfeed-joker", //
+          ".c-page-header", //
+          ".o-teaser__title", //
+          ".OUTBRAIN", //
+          ".c-outbrain-widget__teasers", //
           ".c-themepages", //
           "footer" //
           //"style" //
