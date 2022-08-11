@@ -32,11 +32,13 @@ public class BBC extends SupportedPage {
                 "meta[property*='']", //
                 "link[rel*='']", //
                 "script", //
+                "picture", //
                 "noscript", //
                 "section", //
                 "header", //
                 "style", //
-                "figure" //
+                "figure", //
+                ".article-share-tools"
         );
     }
 

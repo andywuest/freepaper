@@ -11,7 +11,7 @@ public class BBCTest extends AbstractPageTest {
 
     private final SupportedPage page = new BBC();
 
-    private static final String URL = "https://www.bbc.com/news/technology-54141899";
+    private static final String URL = "https://www.bbc.com/future/article/20220705-the-sustainable-cities-made-from-mud";
 
     @Test
     public void getDownload() {
