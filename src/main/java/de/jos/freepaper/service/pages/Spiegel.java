@@ -37,6 +37,11 @@ public class Spiegel extends SupportedPage {
     }
 
     @Override
+    public boolean removeAllLinks() {
+        return true;
+    }
+
+    @Override
     public List<String> getRemovableElements() {
         final List<String> removableElements = super.getRemovableElements();
         removableElements.add("link[rel*='']");
@@ -50,6 +55,7 @@ public class Spiegel extends SupportedPage {
         removableElements.add("footer");
         removableElements.add("aside");
         removableElements.add(".flex");
+        removableElements.add("[data-component='CustomConsent']");
         return removableElements;
     }
 
