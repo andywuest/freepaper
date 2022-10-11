@@ -1,11 +1,11 @@
 package de.jos.freepaper.service.pages;
 
 import de.jos.freepaper.service.SupportedPage;
+
 import java.util.Arrays;
 import java.util.List;
 
 /**
- *
  * @author awuest
  */
 public class HeiseIx extends SupportedPage {
@@ -25,18 +25,19 @@ public class HeiseIx extends SupportedPage {
 
         final List<String> result = super.getRemovableElements();
         result.addAll(Arrays.asList( //
-          "meta[name*='']", //
-          "link[rel*='']", //
-          "nav", //
-          ".heisetopnavi", //
-          "#navi_bottom", //
-          "style", //
-          "img", //
-          "svg", //
-          "a-script", // special tag
-          "script", //
-          "noscript", //
-          "figure" //
+                "meta[name*='']", //
+                "link[rel*='']", //
+                "nav", //
+                "footer", //
+                ".heisetopnavi", //
+                "#navi_bottom", //
+                "style", //
+                "img", //
+                "svg", //
+                "a-script", // special tag
+                "script", //
+                "noscript", //
+                "figure" //
         ));
         return result;
     }

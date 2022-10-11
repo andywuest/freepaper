@@ -1,6 +1,7 @@
 package de.jos.freepaper.service.pages;
 
 import de.jos.freepaper.service.SupportedPage;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -24,6 +25,7 @@ public class HeiseMeinung extends SupportedPage {
                 "meta[name*='']", //
                 "meta[property*='']", //
                 "link[rel*='']", //
+                "footer", //
                 "style", //
                 "meta", //
                 "script", //

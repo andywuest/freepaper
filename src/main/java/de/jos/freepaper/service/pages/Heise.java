@@ -30,6 +30,7 @@ public class Heise extends SupportedPage {
         return Arrays.asList( //              
                 "meta[name*='']", //
                 "link[rel*='']", //
+                "footer", //
                 "figure", //
                 "script", //
                 "style", //

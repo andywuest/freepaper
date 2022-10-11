@@ -6,7 +6,6 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- *
  * @author awuest
  */
 public class HeiseTestSection extends SupportedPage {
@@ -26,25 +25,26 @@ public class HeiseTestSection extends SupportedPage {
 
         final List<String> result = super.getRemovableElements();
         result.addAll(Arrays.asList( //
-          "meta[name*='']", //
-          "meta[http-equiv*='']", //
-          "meta[property*='']", //
-          "meta[name*='']", //
-          "link[rel*='']", //
-          "nav", //
-          ".heisetopnavi", //
-          ".printversion--hide", //
-          "#navi_bottom", //
-          "style", //
-          "img", //
-          "svg", //
-          "a-script", // special tag
-          "a-ad", // special tag
-          "a-collapse", // special tag
-          "a-bilderstrecke", // special tag
-          "script", //
-          "noscript", //
-          "figure" //
+                "meta[name*='']", //
+                "meta[http-equiv*='']", //
+                "meta[property*='']", //
+                "meta[name*='']", //
+                "link[rel*='']", //
+                "nav", //
+                ".heisetopnavi", //
+                ".printversion--hide", //
+                "#navi_bottom", //
+                "footer", //
+                "style", //
+                "img", //
+                "svg", //
+                "a-script", // special tag
+                "a-ad", // special tag
+                "a-collapse", // special tag
+                "a-bilderstrecke", // special tag
+                "script", //
+                "noscript", //
+                "figure" //
         ));
         return result;
     }

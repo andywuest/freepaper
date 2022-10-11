@@ -1,11 +1,11 @@
 package de.jos.freepaper.service.pages;
 
 import de.jos.freepaper.service.SupportedPage;
+
 import java.util.Arrays;
 import java.util.List;
 
 /**
- *
  * @author awuest
  */
 public class HeiseMacAndI extends SupportedPage {
@@ -13,14 +13,14 @@ public class HeiseMacAndI extends SupportedPage {
     @Override
     public String getPrintURL(String url) {
         return url + "?view=print";
-    }    
-    
+    }
+
     @Override
     public String getName() {
         return "heise.de/mac-and-i";
     }
 
-   @Override
+    @Override
     public List<String> getRemovableElements() {
         //return Collections.emptyList();
         final List<String> result = super.getRemovableElements();
@@ -30,6 +30,7 @@ public class HeiseMacAndI extends SupportedPage {
                 "link[rel*='']", //
                 "style", //
                 "a-script", //
+                "footer", //
                 "img", //
                 "svg", //
                 "figure", //
@@ -37,5 +38,5 @@ public class HeiseMacAndI extends SupportedPage {
         ));
         return result;
     }
-    
+
 }
