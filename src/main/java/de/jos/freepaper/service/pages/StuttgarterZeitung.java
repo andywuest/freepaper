@@ -34,11 +34,13 @@ public class StuttgarterZeitung extends SupportedPage {
                 "nav", //
                 "form", //
                 "iframe", //
+                "template", //
                 "footer", //
                 "dig-plugin", //
                 "[data-noprint='true']", //
                 "[style='display:none']", //
                 ".mod-header-new", //
+                ".recoTeaserContainer", //
                 ".bottom-nav", //
                 ".art-tags" //
         );
