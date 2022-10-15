@@ -1,26 +1,24 @@
 package de.jos.freepaper.servlets;
 
 import de.jos.freepaper.Constants;
+import de.jos.freepaper.service.SupportedPage;
+import de.jos.freepaper.service.config.ProxyConfiguration;
 import de.jos.freepaper.service.download.JSoupDownload;
-import java.io.IOException;
-import java.nio.file.Path;
+import io.github.lukehutch.fastclasspathscanner.FastClasspathScanner;
+import org.apache.commons.lang3.StringUtils;
 
-import javax.servlet.ServletException;
+import javax.servlet.ServletConfig;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import de.jos.freepaper.service.config.ProxyConfiguration;
-import de.jos.freepaper.service.SupportedPage;
-import io.github.lukehutch.fastclasspathscanner.FastClasspathScanner;
+import java.io.IOException;
 import java.net.ConnectException;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.servlet.ServletConfig;
-import org.apache.commons.lang3.StringUtils;
 
 public class FreepaperOptimizerServlet extends HttpServlet {
 
@@ -34,7 +32,7 @@ public class FreepaperOptimizerServlet extends HttpServlet {
     private final List<SupportedPage> supportedPages = new ArrayList<>();
 
     @Override
-    public void init(ServletConfig config) throws ServletException {
+    public void init(ServletConfig config) {
         final String proxyHostString = config.getInitParameter("proxyHost");
         final String proxyPortString = config.getInitParameter("proxyPort");
 
@@ -72,8 +70,7 @@ public class FreepaperOptimizerServlet extends HttpServlet {
      * {@inheritDoc}
      */
     @Override
-    protected void doGet(HttpServletRequest request,
-            HttpServletResponse response) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
         final String requestedUrl = request.getParameter("url");
         final String timestamp = request.getParameter("t");
