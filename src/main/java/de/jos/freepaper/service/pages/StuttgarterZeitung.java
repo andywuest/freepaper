@@ -42,6 +42,8 @@ public class StuttgarterZeitung extends SupportedPage {
                 ".mod-header-new", //
                 ".recoTeaserContainer", //
                 ".bottom-nav", //
+                ".article-bottom", //
+                ".gallerybutton", //
                 ".art-tags" //
         );
     }
