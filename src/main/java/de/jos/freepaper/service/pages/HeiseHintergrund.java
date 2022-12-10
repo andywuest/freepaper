@@ -45,6 +45,7 @@ public class HeiseHintergrund extends SupportedPage {
                 "a-login", //
                 "a-sticky-footer", //
                 "a-paternoster", //
+                "a-opt-in", //
                 "time", //
                 "figure", //
                 "img", //
