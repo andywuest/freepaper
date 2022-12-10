@@ -12,7 +12,7 @@ public class HeiseHintergrund extends SupportedPage {
 
     @Override
     public String getPrintURL(String url) {
-        return url;
+        return url + "?view=print";
     }
 
     @Override
@@ -43,6 +43,7 @@ public class HeiseHintergrund extends SupportedPage {
                 "a-teaser", // special tag
                 "a-lightbox", // special tag
                 "a-login", //
+                "a-sticky-footer", //
                 "a-paternoster", //
                 "time", //
                 "figure", //

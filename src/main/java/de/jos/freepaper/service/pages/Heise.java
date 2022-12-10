@@ -44,6 +44,7 @@ public class Heise extends SupportedPage {
                 "a-login", //
                 "a-paternoster", //
                 "a-bilderstrecke", //
+                "a-opt-in", //
                 "embetty-tweet", //
                 "figcaption", //
                 ".leaderboard_print", //
