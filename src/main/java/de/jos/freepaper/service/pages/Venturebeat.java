@@ -33,6 +33,11 @@ public class Venturebeat extends SupportedPage {
         elements.add("script");
         elements.add("noscript");
         elements.add("style");
+        elements.add("img");
+        elements.add(".wp-caption");
+        elements.add(".boilerplate-speedbump");
+        elements.add(".boilerplate-before");
+        elements.add(".boilerplate-after");
         return elements;
     }
 
