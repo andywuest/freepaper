@@ -1,23 +1,25 @@
 package de.jos.freepaper.service.pages;
 
 import de.jos.freepaper.service.SupportedPage;
+
 import java.util.Arrays;
 import java.util.List;
 
-/**
- *
- * @author awuest
- */
-public class Chip extends SupportedPage {
+public class CNBC extends SupportedPage {
 
     @Override
     public String getName() {
-        return "chip.de";
+        return "cnbc.de";
     }
 
     @Override
     public String getPrintURL(String url) {
         return url;
+    }
+
+    @Override
+    public boolean removeAllLinks() {
+        return true;
     }
 
     @Override
@@ -30,18 +32,22 @@ public class Chip extends SupportedPage {
                 "meta[http-equiv*='']", //
                 "link[rel*='']", //
                 "style", //
-                "video", //
-                "aside", //
-                "nav", //
-                "button", //
-                "figure", //
                 "script", //
                 "noscript", //
                 "header", //
                 "footer", //
-                "svg", //
+                "button", //
                 "img", //
-                ".List.is-separated" //
+                "#RegularArticle-RelatedQuotes", //
+                "#MobileAdhesion-Homepage", //
+                ".WildcardEmbed-wrapper", //
+                ".RelatedContent-relatedContent", //
+                ".WatchLiveRightRail-inline", //
+                ".JumpLink-container", //
+                ".InlineImage-imageEmbed", //
+                ".InlineImage-wrapper", //
+                ".CNBCGlobalNav-mobileNavMenu", //
+                ".SidebarArticle-sidebar"
         );
     }
 

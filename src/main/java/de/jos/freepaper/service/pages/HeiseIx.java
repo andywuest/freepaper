@@ -31,6 +31,7 @@ public class HeiseIx extends SupportedPage {
                 "footer", //
                 ".heisetopnavi", //
                 "#navi_bottom", //
+                "embetty-tweet", //
                 "style", //
                 "img", //
                 "svg", //

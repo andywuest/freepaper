@@ -38,6 +38,7 @@ public class HeiseTestSection extends SupportedPage {
                 "style", //
                 "img", //
                 "svg", //
+                "embetty-tweet", //
                 "a-script", // special tag
                 "a-ad", // special tag
                 "a-collapse", // special tag

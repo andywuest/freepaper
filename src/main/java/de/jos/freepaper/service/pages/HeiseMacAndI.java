@@ -31,6 +31,7 @@ public class HeiseMacAndI extends SupportedPage {
                 "style", //
                 "a-script", //
                 "footer", //
+                "embetty-tweet", //
                 "img", //
                 "svg", //
                 "figure", //

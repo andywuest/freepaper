@@ -41,6 +41,7 @@ public class HeiseCt extends SupportedPage {
           ".header_tags", //
           ".breadcrumb", //
           ".adbottom", //
+          "embetty-tweet", //
           ".us_ad", //
           ".teaser_adliste", //
           ".facetten_name", //

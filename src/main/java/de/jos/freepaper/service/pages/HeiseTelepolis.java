@@ -31,6 +31,7 @@ public class HeiseTelepolis extends SupportedPage {
                 "nav", //
                 "a-analytics", // special tag
                 ".heisetopnavi", //
+                "embetty-tweet", //
                 ".printversion__back-to-article", //
                 "#navi_bottom", //
                 "style", //

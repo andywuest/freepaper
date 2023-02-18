@@ -33,6 +33,7 @@ public class HeiseMeinung extends SupportedPage {
                 "a-analytics", //
                 "a-script", //
                 "a-ad", //
+                "embetty-tweet", //
                 "img", //
                 "svg", //
                 "figure", //

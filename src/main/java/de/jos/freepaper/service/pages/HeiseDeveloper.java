@@ -42,6 +42,7 @@ public class HeiseDeveloper extends SupportedPage {
                 "figure", //
                 "img", //
                 "svg", //
+                "embetty-tweet", //
                 ".heisetopnavi_login", //
                 ".heisetopnavi_hover_legacy", //
                 ".readspeaker-link", //

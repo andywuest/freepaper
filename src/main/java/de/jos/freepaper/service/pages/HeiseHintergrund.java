@@ -60,6 +60,7 @@ public class HeiseHintergrund extends SupportedPage {
                 ".adbottom", //
                 "#sitemap", //
                 ".bottom_up", //
+                "embetty-tweet", //
                 "#navi_bottom", //
                 "script", //
                 "aside", //
