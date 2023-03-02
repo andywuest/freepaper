@@ -1,11 +1,11 @@
 package de.jos.freepaper.service.pages;
 
 import de.jos.freepaper.service.SupportedPage;
+
 import java.util.Arrays;
 import java.util.List;
 
 /**
- *
  * @author awuest
  */
 public class Chip extends SupportedPage {
@@ -18,6 +18,11 @@ public class Chip extends SupportedPage {
     @Override
     public String getPrintURL(String url) {
         return url;
+    }
+
+    @Override
+    public boolean removeAllLinks() {
+        return true;
     }
 
     @Override
@@ -41,6 +46,9 @@ public class Chip extends SupportedPage {
                 "footer", //
                 "svg", //
                 "img", //
+                "amp-layout", //
+                "#sidebar", //
+                ".banners", //
                 ".List.is-separated" //
         );
     }
