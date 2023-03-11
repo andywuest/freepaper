@@ -36,6 +36,7 @@ public class HeiseIx extends SupportedPage {
                 "img", //
                 "svg", //
                 "a-script", // special tag
+                "a-opt-in", //
                 "script", //
                 "noscript", //
                 "figure" //

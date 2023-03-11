@@ -38,6 +38,7 @@ public class HeiseDeveloper extends SupportedPage {
                 "a-collapse", // special tag
                 "a-script", // special tag
                 "a-analytics", // special tag
+                "a-opt-in", //
                 "time", //
                 "figure", //
                 "img", //

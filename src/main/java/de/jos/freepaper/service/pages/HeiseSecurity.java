@@ -37,6 +37,7 @@ public class HeiseSecurity extends SupportedPage {
                 "embetty-tweet", //
                 "a-script", // special tag
                 "a-collapse", // special tag
+                "a-opt-in", //
                 "#navi_bottom", //
                 "#mitte_rechts", //
                 ".adbottom", //

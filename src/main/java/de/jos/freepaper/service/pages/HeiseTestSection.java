@@ -41,6 +41,7 @@ public class HeiseTestSection extends SupportedPage {
                 "embetty-tweet", //
                 "a-script", // special tag
                 "a-ad", // special tag
+                "a-opt-in", //
                 "a-collapse", // special tag
                 "a-bilderstrecke", // special tag
                 "script", //

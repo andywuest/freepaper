@@ -30,6 +30,7 @@ public class HeiseTelepolis extends SupportedPage {
                 "link[rel*='']", //
                 "nav", //
                 "a-analytics", // special tag
+                "a-opt-in", //
                 ".heisetopnavi", //
                 "embetty-tweet", //
                 ".printversion__back-to-article", //

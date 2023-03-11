@@ -30,6 +30,7 @@ public class HeiseMacAndI extends SupportedPage {
                 "link[rel*='']", //
                 "style", //
                 "a-script", //
+                "a-opt-in", //
                 "footer", //
                 "embetty-tweet", //
                 "img", //
