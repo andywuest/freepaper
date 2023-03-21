@@ -46,7 +46,9 @@ public class JSoupDownload {
 
             System.out.println("Download URL : " + urlToDownload);
 
-            Connection jsoupConnect = Jsoup.connect(urlToDownload);
+            Connection jsoupConnect = Jsoup.connect(urlToDownload)
+                    .userAgent("Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/111.0")
+                    .referrer("http://www.google.com");
 
             // add proxy if we have one
             if (proxyConfiguration != null) {
