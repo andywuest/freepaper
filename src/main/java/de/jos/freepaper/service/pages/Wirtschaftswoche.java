@@ -64,6 +64,7 @@ public class Wirtschaftswoche extends SupportedPage {
                 ".c-icon--doctype-imagegallery", //
                 ".c-advertisment__fullWidth", //
                 ".o-article__content-element--articlelbox", //
+                "div[data-macro='gallery-shorttext']", //
                 ".c-gallery__item-title" //
         );
     }
