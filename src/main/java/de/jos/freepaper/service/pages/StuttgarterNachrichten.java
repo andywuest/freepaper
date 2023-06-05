@@ -14,15 +14,13 @@ public class StuttgarterNachrichten extends SupportedPage {
 
     @Override
     public String getPrintURL(String url) {
-        // TODO gleiche logik wie stuttgarter zeitung -> mal abgesehen von der URL 
-        final Pattern pattern = Pattern.compile(".*\\.([\\w\\-]*).html");
-        final Matcher matcher = pattern.matcher(url);
-        if (matcher.find()) {
-            final String matchedGroup = matcher.group(1);
-            return "http://www.stuttgarter-nachrichten.de/inhalt.print." + matchedGroup + ".presentation.print.v2.html";
-        }
-        System.out.println("Pattern not found ! URL not changed ! ");
         return url;
+    }
+
+
+    @Override
+    public boolean supportsArticle() {
+        return true;
     }
 
     @Override
@@ -39,8 +37,16 @@ public class StuttgarterNachrichten extends SupportedPage {
           "meta[http-equiv*='']", //
           "link[rel*='']", //
           "figure", //
+          "style", //
+          "nav", //
           "header", //
+          "footer", //
           "noscript", //
+          "#service_themen", //
+          "#article-social-bar", //
+          ".articleTeaser", //
+          ".article-image", //
+          ".mod-sidebar", //
           "script" //
         ));
         return result;

@@ -1,11 +1,11 @@
 package de.jos.freepaper.service.pages;
 
 import de.jos.freepaper.service.SupportedPage;
+
 import java.util.Arrays;
 import java.util.List;
 
 /**
- *
  * @author awuest
  */
 public class Heise extends SupportedPage {
@@ -26,6 +26,11 @@ public class Heise extends SupportedPage {
     }
 
     @Override
+    public boolean removeAllLinks() {
+        return true;
+    }
+
+    @Override
     public List<String> getRemovableElements() {
         return Arrays.asList( //              
                 "meta[name*='']", //
@@ -40,14 +45,17 @@ public class Heise extends SupportedPage {
                 "a-script", //
                 "a-iframe", //
                 "a-ad", //
+                "a-opt-in", //
                 "a-collapse", //
                 "a-login", //
                 "a-paternoster", //
                 "a-bilderstrecke", //
                 "a-opt-in", //
                 "embetty-tweet", //
+                "embetty-tweet", //
                 "figcaption", //
                 ".leaderboard_print", //
+                ".opt-in__cta-container", //
                 ".printversion--hide", //
                 ".printversion__copyright", //
                 "img", //

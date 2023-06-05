@@ -47,6 +47,7 @@ public class Focus extends SupportedPage {
           "img", //
           "svg", //
           "form", //
+          "daa-wgt", //
           "a[title='Werbung']", //
           "iframe", //
           "#header-navigation", //
