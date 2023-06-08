@@ -4,12 +4,11 @@ import de.jos.freepaper.service.SupportedPage;
 import org.junit.Test;
 
 /**
- *
  * @author awuest
  */
 public class TagesschauTest extends AbstractPageTest {
 
-    private static final String URL = "http://www.tagesschau.de/ausland/trump-merkel-syrien-101.html";
+    private static final String URL = "https://www.tagesschau.de/inland/innenpolitik/fcas-kampfflugzeug-100.html";
 
     final SupportedPage page = new Tagesschau();
 

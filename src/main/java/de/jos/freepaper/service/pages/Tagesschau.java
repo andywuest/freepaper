@@ -21,6 +21,11 @@ public class Tagesschau extends SupportedPage {
     }
 
     @Override
+    public boolean supportsArticle() {
+        return true;
+    }
+
+    @Override
     public List<String> getRemovableElements() {
         return Arrays.asList( //
           "meta[name*='']", //
@@ -28,23 +33,12 @@ public class Tagesschau extends SupportedPage {
           "link[href*='']", //
           "script", //
           "noscript", //
+          "nav", //
+          "picture", //
           "iframe", //
-          "#header", //
-          ".skiplinks", //
-          ".socialMedia", //
-          ".teaserImTeaser", //
-          ".teaser", //
-          ".linklist", //
-          ".poweruser", //
-          ".hidden", //
-          ".mediaInfo", //
-          ".mediaCon", //
-          ".inline", //
-          ".ressort", //
-          ".infokasten", //
-          ".metablockwrapper", //
-          "#printbox", //
-          "#footer" //
+          ".teaser-absatz", //
+          ".absatzbild", //
+          ".authorline" //
         );
     }
     
