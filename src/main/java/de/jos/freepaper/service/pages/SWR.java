@@ -31,6 +31,8 @@ public class SWR extends SupportedPage {
                         "style", //
                         "nav", //
                         "figure", //
+                        "picture", //
+                        "aside", //
                         "#header-main-navi-nav", //
                         "#playerbar", //
                         "#skippy", //
@@ -38,6 +40,7 @@ public class SWR extends SupportedPage {
                         ".breadcrumbs", //
                         ".meta-description", //
                         ".meta-authors", //
+                        ".container-serial-homepage", //
                         ".teaser", //
                         ".big-footer", //
                         ".tagleiste", //

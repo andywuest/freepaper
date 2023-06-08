@@ -5,7 +5,7 @@ import org.junit.Test;
 
 public class SWRTest extends AbstractPageTest {
 
-    private static final String URL = "https://www.swr.de/swraktuell/baden-wuerttemberg/stuttgart/bordellstreit-in-stuttgart-worum-gehts-100.html";
+    private static final String URL = "https://www.swr.de/swraktuell/baden-wuerttemberg/stuttgart/schwabenlandtower-steht-wieder-vor-verkauf-100.html";
 
     final SupportedPage page = new SWR();
 
