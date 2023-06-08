@@ -9,7 +9,7 @@ public class BleepingComputerTest extends AbstractPageTest {
 
     private final SupportedPage page = new BleepingComputer();
 
-    private static final String URL = "https://www.bleepingcomputer.com/news/security/ukraine-arrests-51-for-selling-data-of-300-million-people-in-us-eu/";
+    private static final String URL = "https://www.bleepingcomputer.com/news/microsoft/microsoft-365-outage-blocks-access-to-web-apps-and-services/";
 
     @Test
     public void getDownload() {

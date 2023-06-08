@@ -25,39 +25,33 @@ public class DailyMail extends SupportedPage {
         return Arrays.asList( //
           "meta[name*='']", //
           "meta[property*='']", //
+          "meta[content*='']", //
           "link[rel*='']", //
           "link[id*='']", //
           "script", //
           "noscript", //
           "iframe", //
           "style", //
+          "form", //
           "video", //
-          ".ssds_ad", //
-          "#lightbox-target", //
-          "#lightbox-container", //
-          "#banner", //
-          "#reader-comments", //
-          "#share-pictures", //
-          "#overlay", //
-          "#external-source-links", //
-          "#inread-player", //
-          "#infinite-list", //
           ".page-header", //
-          ".google-sky", //
-          ".floating-buttons", //
-          ".billboard_wrapper", //
-          ".column-content", //
-          ".related-carousel", //
-          ".imageCaption", //
-          "#articleIconLinksContainer", //
-          "#most-watched-videos-wrapper", //
-          "#most-read-news-wrapper", //
-          "#mobileGalleryModal", //
+          ".mol-img", //
+          ".mol-factbox", //
+          ".mol-embed", //
+          ".shareArticles", //
+          ".billboard-container", //
           ".beta", //
+          ".has-button-share", //
           ".page-footer", //
           ".and-footer", //
+          "#articleIconLinksContainer", //
+          "#most-watched-videos-lazy-container", //
+          "#reader-comments", //
+          "#sky-left-container", //
+          "#sky-right-container", //
           "#footer", //
-          ".external-source-links" //
+          "#lightbox-container", //
+          "ad-slot" //
         );
     }
 
