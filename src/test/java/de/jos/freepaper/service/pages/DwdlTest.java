@@ -1,8 +1,6 @@
 package de.jos.freepaper.service.pages;
 
 import de.jos.freepaper.service.SupportedPage;
-import static org.assertj.core.api.Assertions.assertThat;
-
 import org.junit.Test;
 
 /**
@@ -13,7 +11,7 @@ public class DwdlTest extends AbstractPageTest {
 
     private final SupportedPage page = new Dwdl();
 
-    private static final String URL = "https://www.dwdl.de/meinungen/78799/frank_rosin_ein_routinier_scheitert_mit_seiner_routine/";
+    private static final String URL = "https://www.dwdl.de/madeineurope/94034/lust_wo_bleibt_die_sexualitaet_bei_frauen_ueber_40/";
 
     @Test
     public void getDownload() {

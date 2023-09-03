@@ -38,6 +38,7 @@ public class Dwdl extends SupportedPage {
                 ".hide-on-print", //
                 ".newsticker-wrapper", //
                 ".sendetermin", //
+                ".external-content", //
                 ".author-box", //
                 "link[rel*='']", //
                 "script", //

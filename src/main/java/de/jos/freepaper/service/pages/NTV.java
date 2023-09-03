@@ -33,6 +33,7 @@ public class NTV extends SupportedPage {
                 "img", //
                 "header", //
                 "footer", //
+                "interaction", //
                 "nav", //
                 "style", //
                 "select", //
