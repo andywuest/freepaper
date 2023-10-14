@@ -29,10 +29,13 @@ public class SchwaebischeZeitung extends SupportedPage {
         removableElements.add("style");
         removableElements.add("svg");
         removableElements.add("img");
+        removableElements.add("list");
         removableElements.add("figure");
+        removableElements.add("picture");
         removableElements.add("figcaption");
         removableElements.add("button");
         removableElements.add("footer");
+        removableElements.add(".sve-teaser_small");
         return removableElements;
     }
 
