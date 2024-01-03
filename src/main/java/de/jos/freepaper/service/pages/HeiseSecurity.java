@@ -1,6 +1,5 @@
 package de.jos.freepaper.service.pages;
 
-import de.jos.freepaper.service.SupportedPage;
 import java.util.Arrays;
 import java.util.List;
 
@@ -8,7 +7,7 @@ import java.util.List;
  *
  * @author awuest
  */
-public class HeiseSecurity extends SupportedPage {
+public class HeiseSecurity extends AbstractHeise {
 
     @Override
     public String getPrintURL(String url) {
@@ -35,9 +34,6 @@ public class HeiseSecurity extends SupportedPage {
                 "footer", //
                 "script", //
                 "embetty-tweet", //
-                "a-script", // special tag
-                "a-collapse", // special tag
-                "a-opt-in", //
                 "#navi_bottom", //
                 "#mitte_rechts", //
                 ".adbottom", //

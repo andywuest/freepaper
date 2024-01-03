@@ -1,14 +1,12 @@
 package de.jos.freepaper.service.pages;
 
-import de.jos.freepaper.service.SupportedPage;
-
 import java.util.Arrays;
 import java.util.List;
 
 /**
  * @author awuest
  */
-public class HeiseIx extends SupportedPage {
+public class HeiseIx extends AbstractHeise {
 
     @Override
     public String getPrintURL(String url) {
@@ -35,8 +33,6 @@ public class HeiseIx extends SupportedPage {
                 "style", //
                 "img", //
                 "svg", //
-                "a-script", // special tag
-                "a-opt-in", //
                 "script", //
                 "noscript", //
                 "figure" //

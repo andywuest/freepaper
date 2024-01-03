@@ -7,7 +7,7 @@ public class NTVTest extends AbstractPageTest {
 
     private final SupportedPage page = new NTV();
 
-    private static final String URL = "https://www.n-tv.de/sport/fussball-em/Die-kranke-Absurditaet-des-Falls-Eriksen-article22617338.html";
+    private static final String URL = "https://www.n-tv.de/wirtschaft/Diese-Firma-steckt-hinter-dem-Ubersetzungs-Hit-article24398533.html";
 
     @Test
     public void getDownload() {

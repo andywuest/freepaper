@@ -11,7 +11,7 @@ public class MMnewsTest extends AbstractPageTest {
 
     private final SupportedPage page = new MMNews();
 
-    private static final String URL = "https://www.mmnews.de/wirtschaft/170012-flucht-aus-deutschland-bei-rot-rot-gruen";
+    private static final String URL = "https://www.mmnews.de/index.php/wirtschaft/209812-iw-verbandsumfrage-miserable-lage-duesterer-ausblick";
 
     @Test
     public void getDownload() {

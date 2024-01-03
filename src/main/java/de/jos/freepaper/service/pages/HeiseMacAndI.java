@@ -1,14 +1,12 @@
 package de.jos.freepaper.service.pages;
 
-import de.jos.freepaper.service.SupportedPage;
-
 import java.util.Arrays;
 import java.util.List;
 
 /**
  * @author awuest
  */
-public class HeiseMacAndI extends SupportedPage {
+public class HeiseMacAndI extends AbstractHeise {
 
     @Override
     public String getPrintURL(String url) {
@@ -29,8 +27,6 @@ public class HeiseMacAndI extends SupportedPage {
                 "meta[property*='']", //
                 "link[rel*='']", //
                 "style", //
-                "a-script", //
-                "a-opt-in", //
                 "footer", //
                 "embetty-tweet", //
                 "img", //

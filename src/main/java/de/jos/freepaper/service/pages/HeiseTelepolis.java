@@ -1,14 +1,12 @@
 package de.jos.freepaper.service.pages;
 
-import de.jos.freepaper.service.SupportedPage;
-
 import java.util.Arrays;
 import java.util.List;
 
 /**
  * @author wuesand
  */
-public class HeiseTelepolis extends SupportedPage {
+public class HeiseTelepolis extends AbstractHeise {
 
     @Override
     public String getPrintURL(String url) {
@@ -29,8 +27,6 @@ public class HeiseTelepolis extends SupportedPage {
                 "meta[http-equiv*='']", //
                 "link[rel*='']", //
                 "nav", //
-                "a-analytics", // special tag
-                "a-opt-in", //
                 ".heisetopnavi", //
                 "embetty-tweet", //
                 ".printversion__back-to-article", //

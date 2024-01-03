@@ -30,6 +30,9 @@ public abstract class SupportedPage {
      */
     public List<String> getRemovableElements() {
         return new ArrayList<>(Arrays.asList(
+                "style",
+                "script",
+                "noscript",
                 "iframe",
                 "form",
                 "noscript",

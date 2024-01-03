@@ -1,14 +1,12 @@
 package de.jos.freepaper.service.pages;
 
-import de.jos.freepaper.service.SupportedPage;
-
 import java.util.Arrays;
 import java.util.List;
 
 /**
  * @author awuest
  */
-public class Heise extends SupportedPage {
+public class Heise extends AbstractHeise {
 
     @Override
     public String getPrintURL(String url) {
@@ -42,15 +40,6 @@ public class Heise extends SupportedPage {
                 "noscript", //
                 "time", //
                 "inline", //
-                "a-script", //
-                "a-iframe", //
-                "a-ad", //
-                "a-opt-in", //
-                "a-collapse", //
-                "a-login", //
-                "a-paternoster", //
-                "a-bilderstrecke", //
-                "a-opt-in", //
                 "embetty-tweet", //
                 "embetty-tweet", //
                 "figcaption", //

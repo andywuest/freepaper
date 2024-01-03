@@ -46,6 +46,7 @@ public class Focus extends SupportedPage {
           "legend", //
           "img", //
           "svg", //
+          "u", //
           "form", //
           "daa-wgt", //
           "a[title='Werbung']", //

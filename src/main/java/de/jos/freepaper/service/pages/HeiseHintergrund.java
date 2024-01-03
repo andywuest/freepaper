@@ -1,6 +1,5 @@
 package de.jos.freepaper.service.pages;
 
-import de.jos.freepaper.service.SupportedPage;
 import java.util.Arrays;
 import java.util.List;
 
@@ -8,7 +7,7 @@ import java.util.List;
  *
  * @author awuest
  */
-public class HeiseHintergrund extends SupportedPage {
+public class HeiseHintergrund extends AbstractHeise {
 
     @Override
     public String getPrintURL(String url) {

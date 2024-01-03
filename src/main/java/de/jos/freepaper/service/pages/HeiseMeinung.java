@@ -1,11 +1,9 @@
 package de.jos.freepaper.service.pages;
 
-import de.jos.freepaper.service.SupportedPage;
-
 import java.util.Arrays;
 import java.util.List;
 
-public class HeiseMeinung extends SupportedPage {
+public class HeiseMeinung extends AbstractHeise {
 
     @Override
     public String getPrintURL(String url) {
@@ -29,11 +27,6 @@ public class HeiseMeinung extends SupportedPage {
                 "style", //
                 "meta", //
                 "script", //
-                "a-collapse", //
-                "a-analytics", //
-                "a-script", //
-                "a-opt-in", //
-                "a-ad", //
                 "embetty-tweet", //
                 "img", //
                 "svg", //

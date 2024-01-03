@@ -1,6 +1,5 @@
 package de.jos.freepaper.service.pages;
 
-import de.jos.freepaper.service.SupportedPage;
 import java.util.Arrays;
 import java.util.List;
 
@@ -8,7 +7,7 @@ import java.util.List;
  *
  * @author awuest
  */
-public class HeiseDeveloper extends SupportedPage {
+public class HeiseDeveloper extends AbstractHeise {
 
     @Override
     public String getPrintURL(String url) {
@@ -34,11 +33,6 @@ public class HeiseDeveloper extends SupportedPage {
                 "meta[property*='']", //
                 "link[rel*='']", //
                 "footer", //
-                "a-ad", // special tag
-                "a-collapse", // special tag
-                "a-script", // special tag
-                "a-analytics", // special tag
-                "a-opt-in", //
                 "time", //
                 "figure", //
                 "img", //
