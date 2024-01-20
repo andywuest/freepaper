@@ -25,7 +25,7 @@ public class DerAktionaer extends SupportedPage {
     @Override
     public List<String> getRemovableElements() {
         final List<String> result = super.getRemovableElements();
-        return Arrays.asList( //
+        result.addAll(Arrays.asList( //
                 "link", //
                 "meta[name*='']", //
                 "meta[property*='']", //
@@ -33,20 +33,26 @@ public class DerAktionaer extends SupportedPage {
                 "noscript", //
                 "blockquote", //
                 "img", //
+                "small", //
                 "table", //
                 "footer", //
-                "header", //
+                "#share-article-nav", //
                 "#similar-product", //
                 "#share-container", //
                 "#article-detail-keywords", //
                 "#article-detail-symbol", //
                 "#article-detail-further", //
+                ".stock-info-badge", //
                 ".article-image", //
                 ".article-chart", //
                 "#werte-title", //
+                "#article-detail-keywords", //
+                ".article-video", //
+                ".article-header-image", //
+                ".article-disclaimer", //
                 ".related-articles" //
-        );
+        ));
+        return result;
     }
-
 
 }
