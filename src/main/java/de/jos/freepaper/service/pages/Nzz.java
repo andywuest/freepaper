@@ -39,7 +39,12 @@ public class Nzz extends SupportedPage {
         elements.add("#footer");
         elements.add(".headline__meta");
         elements.add(".pageelement--moretosubject");
+        elements.add(".q-chart");
+        elements.add(".GoogleActiveViewElement");
+        elements.add(".pageelement--newestarticle");
+        elements.add(".flickity-enabled");
         elements.add("svg");
+        elements.add("flickity");
         elements.add("figure");
         elements.add("button");
         return elements;

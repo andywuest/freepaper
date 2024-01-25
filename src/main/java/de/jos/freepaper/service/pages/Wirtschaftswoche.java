@@ -51,6 +51,7 @@ public class Wirtschaftswoche extends SupportedPage {
                 "script", //
                 "iframe", //
                 "input", //
+                "wiwo-paywall-ftc", //
                 ".c-socialblock", //
                 ".c-socials__icon", //
                 ".c-socials__text", //
