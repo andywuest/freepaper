@@ -58,11 +58,13 @@ public class FreepaperOptimizerServlet extends HttpServlet {
 
     private void registerSupportedPage(List<SupportedPage> supportedPages, Class<? extends SupportedPage> clazz) {
         try {
-            final SupportedPage newInstance = clazz.newInstance();
-            System.out.println("  * " + clazz.getName() + " - " + newInstance.getName());
-            supportedPages.add(newInstance);
+            if (!clazz.getName().contains("Abstract")) {
+                final SupportedPage newInstance = clazz.newInstance();
+                System.out.println("  * " + clazz.getName() + " - " + newInstance.getName());
+                supportedPages.add(newInstance);
+            }
         } catch (InstantiationException | IllegalAccessException ex) {
-            Logger.getLogger(FreepaperOptimizerServlet.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(FreepaperOptimizerServlet.class.getName()).log(Level.SEVERE, "failed to register class " + clazz, ex);
         }
     }
 

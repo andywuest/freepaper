@@ -30,7 +30,8 @@ public class Heise extends AbstractHeise {
 
     @Override
     public List<String> getRemovableElements() {
-        return Arrays.asList( //              
+        final List<String> result = super.getRemovableElements();
+        result.addAll(Arrays.asList( //
                 "meta[name*='']", //
                 "link[rel*='']", //
                 "footer", //
@@ -54,7 +55,8 @@ public class Heise extends AbstractHeise {
                 ".heisetopnavi", //
                 ".image-num", //
                 ".ISI_IGNORE"
-        );
+        ));
+        return result;
     }
 
 }
