@@ -94,6 +94,7 @@ public class JSoupDownload {
             removeAllAttributesOfTag(doc, "h1");
             removeAllAttributesOfTag(doc, "h2");
             removeAllAttributesOfTag(doc, "h3");
+            removeAllAttributesOfTag(doc, "h4");
             removeAllAttributesOfTag(doc, "br");
             removeAllAttributesOfTag(doc, "body");
             removeAllAttributesOfTag(doc, "hr");

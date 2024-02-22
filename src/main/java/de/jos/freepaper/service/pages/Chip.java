@@ -49,6 +49,9 @@ public class Chip extends SupportedPage {
                 "amp-layout", //
                 "#sidebar", //
                 ".banners", //
+                ".consentBox__Paragraph", //
+                ".subscriber-form", //
+                ".campaign-widget", //
                 ".List.is-separated" //
         );
     }

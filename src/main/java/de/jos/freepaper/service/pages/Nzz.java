@@ -34,6 +34,7 @@ public class Nzz extends SupportedPage {
         final List<String> elements = super.getRemovableElements();
         elements.add("meta[name*='']");
         elements.add("meta[property*='']");
+        elements.add("meta[http-equiv*='']");
         elements.add("link[rel*='']");
         elements.add("#header");
         elements.add("#footer");
@@ -43,6 +44,7 @@ public class Nzz extends SupportedPage {
         elements.add(".GoogleActiveViewElement");
         elements.add(".pageelement--newestarticle");
         elements.add(".flickity-enabled");
+        elements.add(".games-widget");
         elements.add("svg");
         elements.add("flickity");
         elements.add("figure");
