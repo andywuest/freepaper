@@ -55,6 +55,7 @@ public class Spiegel extends SupportedPage {
         removableElements.add("footer");
         removableElements.add("aside");
         removableElements.add(".flex");
+        removableElements.add(".pointer-events-auto");
         removableElements.add("[data-component='CustomConsent']");
         return removableElements;
     }

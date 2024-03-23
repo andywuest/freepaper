@@ -39,7 +39,11 @@ public class Stern extends SupportedPage {
                 "noscript", //
                 "figure", //
                 "time", //
+                "dialog", //
                 "x-gallery-scroller", //
+                "x-bookmarkbutton", //
+                "x-snackbar", //
+                "x-token", //
                 ".breadcrumb", //
                 ".group__embedded-teasers", //
                 ".article__end", //
