@@ -26,6 +26,8 @@ public class Bluewin extends SupportedPage {
                 "meta[property*='']", //
                 "script", //
                 "noscript", //
+                "figcaption", //
+                "picture", //
                 "o-header-new", //
                 ".o-sidebar", //
                 ".m-socialheader__sharing", //
