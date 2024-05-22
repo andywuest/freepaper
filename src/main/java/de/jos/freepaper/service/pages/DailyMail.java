@@ -44,6 +44,8 @@ public class DailyMail extends SupportedPage {
           ".has-button-share", //
           ".page-footer", //
           ".and-footer", //
+          ".linkButtonRow", //
+          "#mini-carousel-wrapper", //
           "#articleIconLinksContainer", //
           "#most-watched-videos-lazy-container", //
           "#reader-comments", //
