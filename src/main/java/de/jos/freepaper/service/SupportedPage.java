@@ -36,7 +36,7 @@ public abstract class SupportedPage {
                 "iframe",
                 "form",
                 "noscript",
-                "iframe",
+                "figure",
                 "button"
         ));
     }
