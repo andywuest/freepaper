@@ -9,7 +9,7 @@ import org.junit.Test;
  */
 public class FazTest extends AbstractPageTest  {
     
-    private static final String URL = "https://www.faz.net/aktuell/finanzen/ist-das-geld-sicher-lieber-sparkasse-als-smartphone-bank-n26-16150622.html";
+    private static final String URL = "https://www.faz.net/aktuell/karriere-hochschule/anti-colonial-days-an-uni-frankfurt-geplant-19747696.html";
 
     final SupportedPage page = new Faz();
 
