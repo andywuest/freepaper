@@ -37,6 +37,7 @@ public abstract class SupportedPage {
                 "form",
                 "noscript",
                 "figure",
+                "figcaption",
                 "button"
         ));
     }
