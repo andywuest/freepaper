@@ -40,6 +40,7 @@ public class Faz extends SupportedPage {
         elements.add("picture");
         elements.add("footer");
         elements.add(".hidden");
+        elements.add(".mm-adbox");
         elements.add(".header-detail");
         elements.add(".header-teaser__image-details");
         elements.add(".footer-source");
