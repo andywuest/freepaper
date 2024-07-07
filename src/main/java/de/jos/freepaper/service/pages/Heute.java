@@ -35,6 +35,7 @@ public class Heute extends SupportedPage {
                 ".sticky-outer-wrapper", //
                 "svg", //
                 "img", //
+                ".gb-rear", //
                 "#page-header" //
         ));
         return result;
