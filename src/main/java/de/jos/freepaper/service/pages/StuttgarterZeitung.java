@@ -17,23 +17,18 @@ public class StuttgarterZeitung extends SupportedPage {
 
     @Override
     public List<String> getRemovableElements() {
-        return Arrays.asList( //
+        final List<String> removableElements = super.getRemovableElements();
+        removableElements.addAll(Arrays.asList( //
                 "meta[name*='']", //
                 "meta[content*='']", //
                 "meta[property*='']", //
                 "meta[http-equiv*='']", //
                 "link[rel*='']", //
                 "link", //
-                "script", //
-                "style", //
                 "aside", //
-                "noscript", //
-                "figure", //
                 "svg", //
-                "img", //
                 "nav", //
-                "form", //
-                "iframe", //
+                "glomex-player", //
                 "template", //
                 "footer", //
                 "dig-plugin", //
@@ -45,7 +40,8 @@ public class StuttgarterZeitung extends SupportedPage {
                 ".article-bottom", //
                 ".gallerybutton", //
                 ".art-tags" //
-        );
+        ));
+        return removableElements;
     }
 
     @Override

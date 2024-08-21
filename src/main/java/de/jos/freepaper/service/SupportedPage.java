@@ -1,14 +1,14 @@
 package de.jos.freepaper.service;
 
+import org.jsoup.nodes.Document;
+
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import org.jsoup.nodes.Document;
 
 /**
- *
  * @author awuest
  */
 public abstract class SupportedPage {
@@ -37,6 +37,8 @@ public abstract class SupportedPage {
                 "form",
                 "noscript",
                 "figure",
+                "picture",
+                "img",
                 "figcaption",
                 "button"
         ));
@@ -80,13 +82,13 @@ public abstract class SupportedPage {
     public boolean removeAllLinks() {
         return false;
     }
-    
+
     public boolean supportsArticle() {
         return false;
     }
-    
+
     public boolean removeEmptyTags() {
         return false;
     }
-    
+
 }
