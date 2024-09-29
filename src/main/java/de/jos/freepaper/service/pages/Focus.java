@@ -45,9 +45,13 @@ public class Focus extends SupportedPage {
                 "fieldset", //
                 "legend", //
                 "img", //
+                "figure", //
                 "svg", //
                 "u", //
                 "form", //
+                "nav", //
+                "header", //
+                "footer", //
                 "daa-wgt", //
                 "a[title='Werbung']", //
                 "iframe", //
@@ -55,6 +59,9 @@ public class Focus extends SupportedPage {
                 "#article-social-holder", //
                 ".mediaBlock", //
                 ".print_header", //
+                ".Social-Sharing-Container", //
+                ".Article-Author-List", //
+                ".Ad-Slot", //
                 ".textFazit", //
                 ".overhead", //
                 ".authorList", //
