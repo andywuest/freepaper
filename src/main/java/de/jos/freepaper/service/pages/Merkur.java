@@ -34,6 +34,7 @@ public class Merkur extends SupportedPage {
                 "figure", //
                 "script", //
                 "noscript", //
+                "egy-discussion", //
                 ".id-AuthorList-wrapper", //
                 ".id-Article-dateActionboxCombo", //
                 ".id-Article-content-item-gallery" //
