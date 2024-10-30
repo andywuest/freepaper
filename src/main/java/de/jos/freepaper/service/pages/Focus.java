@@ -4,7 +4,6 @@ import de.jos.freepaper.service.SupportedPage;
 
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
-import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -28,53 +27,50 @@ public class Focus extends SupportedPage {
     }
 
     @Override
-    public String getPrintURL(String url) {
-        return url + "?drucken=1";
+    public boolean supportsArticle() {
+        return false;
     }
 
     @Override
     public List<String> getRemovableElements() {
-        return Arrays.asList( //
-                "meta[name*='']", //
-                "meta[property*='']", //
-                "meta[http-equiv*='']", //
-                "link[rel*='']", //
-                "script", //
-                "noscript", //
-                "style", //
-                "fieldset", //
-                "legend", //
-                "img", //
-                "figure", //
-                "svg", //
-                "u", //
-                "form", //
-                "nav", //
-                "header", //
-                "footer", //
-                "daa-wgt", //
-                "a[title='Werbung']", //
-                "iframe", //
-                "#header-navigation", //
-                "#article-social-holder", //
-                ".mediaBlock", //
-                ".print_header", //
-                ".Social-Sharing-Container", //
-                ".Article-Author-List", //
-                ".Ad-Slot", //
-                ".textFazit", //
-                ".overhead", //
-                ".authorList", //
-                ".instagram-media", //
-                ".affiliate_info", //
-                ".noads", //
-                ".textPDF", //
-                ".cls_hor_prnt_am", //
-                ".OUTBRAIN", //
-                ".m-conclusion-box", //
-                "#print_image_info", //
-                "#footer"
-        );
+        final List<String> removableElements = super.getRemovableElements();
+        removableElements.add("meta[name*='']");
+        removableElements.add("meta[property*='']");
+        removableElements.add("meta[name*='']");
+        removableElements.add("link[rel*='']");
+        removableElements.add("header");
+        removableElements.add("footer");
+        removableElements.add("#special-header-v2");
+        removableElements.add("#skyscraper");
+        removableElements.add("#servicev2");
+        removableElements.add("#newsbreadcrumb");
+        removableElements.add("#article-social");
+        removableElements.add("#comment-wrapper");
+        removableElements.add("#socialicons_sticky");
+        removableElements.add("#inactivity_layer_bg");
+        removableElements.add("#print_image_info");
+        removableElements.add("#teaserRss");
+        removableElements.add("nav");
+        removableElements.add("input");
+        removableElements.add("svg");
+        removableElements.add(".nocontent");
+        removableElements.add(".groupon-list-container");
+        removableElements.add(".teaser");
+        removableElements.add(".comments-banner");
+        removableElements.add(".container-article-inline-teaser");
+        removableElements.add(".topRightTickerHolder");
+        removableElements.add(".comments-background");
+        removableElements.add(".comments-panel");
+        removableElements.add(".container_multichart");
+        removableElements.add(".teaserList-2");
+        removableElements.add(".teaserList3x1");
+        removableElements.add(".teaserList2x2");
+        removableElements.add(".re_textteaserlist");
+        removableElements.add(".teaserBlock");
+        removableElements.add(".orange-button-artobj");
+        removableElements.add(".article-social-border");
+        removableElements.add(".actions");
+        return removableElements;
     }
 
 }
