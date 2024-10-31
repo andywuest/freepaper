@@ -50,6 +50,7 @@ public class Focus extends SupportedPage {
         removableElements.add("#inactivity_layer_bg");
         removableElements.add("#print_image_info");
         removableElements.add("#teaserRss");
+        removableElements.add("#sidebar");
         removableElements.add("nav");
         removableElements.add("input");
         removableElements.add("svg");
