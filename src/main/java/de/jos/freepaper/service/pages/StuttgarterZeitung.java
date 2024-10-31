@@ -16,6 +16,11 @@ public class StuttgarterZeitung extends SupportedPage {
     }
 
     @Override
+    public boolean removeEmptyTags() {
+        return true;
+    }
+
+    @Override
     public List<String> getRemovableElements() {
         final List<String> removableElements = super.getRemovableElements();
         removableElements.addAll(Arrays.asList( //
@@ -25,28 +30,16 @@ public class StuttgarterZeitung extends SupportedPage {
                 "meta[http-equiv*='']", //
                 "link[rel*='']", //
                 "link", //
-                "aside", //
-                "svg", //
-                "nav", //
                 "glomex-player", //
-                "template", //
-                "footer", //
                 "dig-plugin", //
-                "[data-noprint='true']", //
-                "[style='display:none']", //
+                "footer", //
+                "#stellenfeedwrapper", //
+                "#article-social-bar", //
+                ".articleTeaser", //
                 ".mod-header-new", //
-                ".recoTeaserContainer", //
-                ".bottom-nav", //
-                ".article-bottom", //
-                ".gallerybutton", //
-                ".art-tags" //
+                ".breadcrumb" //
         ));
         return removableElements;
-    }
-
-    @Override
-    public String getPrintURL(String url) {
-        return url;
     }
 
     @Override
