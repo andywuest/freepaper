@@ -58,6 +58,8 @@ public class Focus extends SupportedPage {
         removableElements.add(".groupon-list-container");
         removableElements.add(".Ad-Slot-Sticky--Right");
         removableElements.add(".Ad-Slot");
+        removableElements.add(".Social-Widget");
+        removableElements.add(".Ad-Carousel");
         removableElements.add(".Ad-Slot-970-Container");
         removableElements.add(".Ad-Slot-Sticky-Container");
         removableElements.add(".teaser");
