@@ -40,6 +40,17 @@ public class Stern extends SupportedPage {
                 "figure", //
                 "time", //
                 "dialog", //
+                "ws-drawer", //
+                "ws-adtag", //
+                "ws-paywallcontrol", //
+                "ws-gallery", //
+                "ws-dialog", //
+                "ws-sourcepoint", //
+                "ws-push", //
+                "ws-upscore", //
+                "ws-vgwort", //
+                "ws-nielsen", //
+                "ws-gtm", //
                 "x-gallery-scroller", //
                 "x-bookmarkbutton", //
                 "x-snackbar", //
