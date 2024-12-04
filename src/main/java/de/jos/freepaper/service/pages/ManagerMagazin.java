@@ -36,6 +36,9 @@ public class ManagerMagazin extends SupportedPage {
                 "svg", //
                 "button", //
                 "ul", //
+                "figcaption", //
+                "template", //
+                "input", //
                 "img", //
                 "figure", //
                 "aside", //
