@@ -79,6 +79,9 @@ public class Focus extends SupportedPage {
         removableElements.add(".teaserList-2");
         removableElements.add(".teaserList3x1");
         removableElements.add(".teaserList2x2");
+        removableElements.add(".nl_subscription_form");
+        removableElements.add(".teaserList-ontop");
+        removableElements.add(".overhead");
         removableElements.add(".re_textteaserlist");
         removableElements.add(".teaserBlock");
         removableElements.add(".orange-button-artobj");

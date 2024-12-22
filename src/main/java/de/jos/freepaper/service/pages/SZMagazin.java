@@ -29,19 +29,27 @@ public class SZMagazin extends SupportedPage {
 
     @Override
     public List<String> getRemovableElements() {
-        return Arrays.asList(//
-                "link[rel*='']", //
-                "meta[name*='']", //
-                "meta[property*='']", //
-                "script", //
-                "style", //
-                "img", //
-                "svg", //
-                ".socialsharingbar", //
-                ".articleheader__metabar", //
-                ".articlefooter", //
-                "figure"
-        );
+        final List<String> removableElements = super.getRemovableElements();
+        removableElements.addAll(
+                Arrays.asList(//
+                        "meta[http-equiv*='']", //
+                        "meta[name*='']", //
+                        "meta[property*='']", //
+                        "link[rel*='']", //
+                        "header", //
+                        "footer", //
+                        "style", //
+                        "dl", //
+                        ".articlemain__authors-box", //
+                        ".breadcrumbs__content", //
+                        ".sz-archive-container", //
+                        ".article-further-reading", //
+                        ".image-gallery", //
+                        ".szm-toolbar", //
+                        ".article-ending-nav", //
+                        ".inline-teaser" //
+                ));
+        return removableElements;
     }
 
     @Override
