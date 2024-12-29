@@ -5,7 +5,7 @@ import org.junit.Test;
 
 public class DerAktionaerTest extends AbstractPageTest {
 
-    private static final String URL = "https://www.deraktionaer.de/artikel/medien-ittk-technologie/walt-disney-milliardaer-attackiert-fuehrung-live-im-tv-20348056.html";
+    private static final String URL = "https://www.deraktionaer.de/artikel/mobilitaet-oel-energie/volkswagen-datenpanne-problemtochter-cariad-im-fokus-20372352.html";
 
     final SupportedPage page = new DerAktionaer();
 

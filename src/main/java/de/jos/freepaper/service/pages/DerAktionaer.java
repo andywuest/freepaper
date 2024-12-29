@@ -23,34 +23,32 @@ public class DerAktionaer extends SupportedPage {
     }
 
     @Override
+    public boolean removeEmptyTags() {
+        return true;
+    }
+
+    @Override
     public List<String> getRemovableElements() {
         final List<String> result = super.getRemovableElements();
         result.addAll(Arrays.asList( //
-                "link", //
                 "meta[name*='']", //
+                "link[rel*='']", //
                 "meta[property*='']", //
-                "script", //
-                "noscript", //
-                "blockquote", //
-                "img", //
-                "small", //
-                "table", //
-                "footer", //
-                "#share-article-nav", //
-                "#similar-product", //
-                "#share-container", //
+                ".breaking-news-container", //
+                ".article-header-image", //
+                ".related-articles", //
+                ".article-chart", //
+                ".article-disclaimer", //
+                ".table-scrollx-container", //
+                ".article-list-latest-issue", //
+                "#article-header-info", //
                 "#article-detail-keywords", //
                 "#article-detail-symbol", //
                 "#article-detail-further", //
-                ".stock-info-badge", //
-                ".article-image", //
-                ".article-chart", //
-                "#werte-title", //
-                "#article-detail-keywords", //
-                ".article-video", //
-                ".article-header-image", //
-                ".article-disclaimer", //
-                ".related-articles" //
+                "#flyin-banner", //
+                "#similar-product", //
+                "header", //
+                "footer" //
         ));
         return result;
     }
