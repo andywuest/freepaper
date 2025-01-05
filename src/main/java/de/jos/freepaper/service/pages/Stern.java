@@ -43,6 +43,8 @@ public class Stern extends SupportedPage {
                 "ws-drawer", //
                 "ws-adtag", //
                 "ws-paywallcontrol", //
+                "ws-adscript", //
+                "ws-socialwidget", //
                 "ws-gallery", //
                 "ws-dialog", //
                 "ws-sourcepoint", //
