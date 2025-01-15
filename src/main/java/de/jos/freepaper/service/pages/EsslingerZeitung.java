@@ -26,11 +26,9 @@ public class EsslingerZeitung extends SupportedPage {
         final List<String> elements = super.getRemovableElements();
         elements.add("link[rel*='']");
         elements.add("link[href*='']");
-        elements.add("style");
-        elements.add("script");
-        elements.add("figure");
-        elements.add("img");
+        elements.add("dig-plugin");
         elements.add("#article-social-bar");
+        elements.add(".articleTeaser");
         elements.add(".article-related");
         elements.add(".article-social-bottom");
         elements.add(".article-bottom-wrapper");
