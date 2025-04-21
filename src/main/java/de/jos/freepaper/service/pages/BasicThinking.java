@@ -1,18 +1,15 @@
 package de.jos.freepaper.service.pages;
 
 import de.jos.freepaper.service.SupportedPage;
+
 import java.util.Arrays;
 import java.util.List;
 
-/**
- *
- * @author awuest
- */
-public class Techcrunch extends SupportedPage {
+public class BasicThinking extends SupportedPage {
 
     @Override
     public String getName() {
-        return "techcrunch.com";
+        return "basicthinking.de";
     }
 
     @Override
@@ -27,18 +24,19 @@ public class Techcrunch extends SupportedPage {
                 "link[rel*='']",
                 "meta[property*='']", //
                 "meta[name*='']", //
-                "header",
                 "footer",
-                "nav",
-                ".article-sidebar",
-                ".article-hero__category",
-                ".article-hero__share",
-                ".wp-block-tc23-post-relevant-terms",
-                ".wp-block-techcrunch-social-share",
-                ".wp-block-techcrunch-seamless-scroll",
-                ".wp-block-techcrunch-post-authors",
-                ".tc23-post-relevant-terms__terms",
-                ".seamless-scroll__loader"
+                "#site-header",
+                "#rb-user-popup-form",
+                ".comment-box-wrap",
+                ".l-shared-sec",
+                ".e-shared-sec",
+                ".feat-caption",
+                ".p-categories",
+                ".usr-holder",
+                ".single-footer",
+                ".sidebar-wrap",
+                ".redaktion-newsletter",
+                ".entry-bottom"
         ));
         return removableElements;
     }
