@@ -19,10 +19,7 @@ public class BoerseOnline extends SupportedPage {
 
     @Override
     public String getPrintURL(String url) {
-        final String suffix = url.replaceAll(".*-online.de", "");
-        String printUrl = url.replaceAll("/nachrichten/aktien/", "/nachrichten/drucken/");
-        printUrl = printUrl + "?url=" + suffix;
-        return printUrl;
+        return url;
     }
 
     @Override
@@ -32,14 +29,25 @@ public class BoerseOnline extends SupportedPage {
 
     @Override
     public List<String> getRemovableElements() {
-        return Arrays.asList( //
-          "meta[name*='']", //
-          "meta[property*='']", //
-          "meta[http-equiv*='']", //
-          "link[rel*='']", //
-          "script", //
-          "img" //
-        );
+        final List<String> removableElements = super.getRemovableElements();
+        removableElements.addAll(Arrays.asList(
+                "link[rel*='']",
+                "meta[property*='']", //
+                "meta[name*='']", //
+                ".stock-info-badge-position", //
+                ".article-info", //
+                ".article-chart", //
+                ".article-footer", //
+                ".article-related", //
+                ".symbol-information", //
+                "#header-navigation-account", //
+                "#header-search-results", //
+                "#breaking-news", //
+                "#flyin-banner", //
+                "footer", //
+                "nav" //
+        ));
+        return removableElements;
     }
 
 }
