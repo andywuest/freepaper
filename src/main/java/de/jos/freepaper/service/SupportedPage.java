@@ -21,7 +21,9 @@ public abstract class SupportedPage {
     /**
      * The URL of the print page.
      */
-    public abstract String getPrintURL(String url);
+    public String getPrintURL(String url) {
+        return url;
+    }
 
     /**
      * CSS Selector expression (JQuery) for elements that can be savely removed.
@@ -39,6 +41,7 @@ public abstract class SupportedPage {
                 "figure",
                 "picture",
                 "img",
+                "svg",
                 "figcaption",
                 "button"
         ));

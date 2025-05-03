@@ -104,6 +104,7 @@ public class JSoupDownload {
             removeAllAttributesOfTag(doc, "span");
             removeAllAttributesOfTag(doc, "section");
             removeAllAttributesOfTag(doc, "i");
+            removeAllAttributesOfTag(doc, "strong");
             removeAllAttributesOfTag(doc, "ul"); // handelsblatt
             removeAllAttributesOfTag(doc, "li"); // handelsblatt
             removeAllAttributesOfTag(doc, "p"); // handelsblatt

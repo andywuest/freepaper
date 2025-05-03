@@ -32,6 +32,11 @@ public class Focus extends SupportedPage {
     }
 
     @Override
+    public boolean removeEmptyTags() {
+        return true;
+    }
+
+    @Override
     public List<String> getRemovableElements() {
         final List<String> removableElements = super.getRemovableElements();
         removableElements.add("meta[name*='']");
@@ -55,6 +60,7 @@ public class Focus extends SupportedPage {
         removableElements.add("input");
         removableElements.add("svg");
         removableElements.add(".nocontent");
+        removableElements.add(".hidden-lg");
         removableElements.add(".groupon-list-container");
         removableElements.add(".Ad-Slot-Sticky--Right");
         removableElements.add(".Ad-Slot");

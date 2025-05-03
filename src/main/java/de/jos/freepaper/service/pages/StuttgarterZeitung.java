@@ -31,6 +31,7 @@ public class StuttgarterZeitung extends SupportedPage {
                 "link[rel*='']", //
                 "link", //
                 "glomex-player", //
+                "glomex-integration", //
                 "dig-plugin", //
                 "footer", //
                 "#stellenfeedwrapper", //
