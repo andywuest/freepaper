@@ -11,7 +11,7 @@ public class WdrTest extends AbstractPageTest {
 
     private final SupportedPage page = new Wdr();
 
-    private static final String URL = "http://www1.wdr.de/nachrichten/landespolitik/westlb-portigon-razzia-100.html";
+    private static final String URL = "https://www1.wdr.de/nachrichten/-windows95-duesseldorf-landwirt-eiersortiermaschine-100.html";
 
     @Test
     public void getDownload() {

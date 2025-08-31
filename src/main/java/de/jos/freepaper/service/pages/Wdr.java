@@ -1,7 +1,7 @@
 package de.jos.freepaper.service.pages;
 
 import de.jos.freepaper.service.SupportedPage;
-import java.util.Arrays;
+
 import java.util.List;
 
 /**
@@ -21,24 +21,20 @@ public class Wdr extends SupportedPage {
     }
 
     @Override
-    public List<String> getRemovableElements() {
-        return Arrays.asList(//
-          "link[rel*='']", //
-          "meta[name*='']", //
-          "meta[property*='']", //
-          "script", //
-          "noscript", //
-          "style", //
-          "iframe", //
-          "img", //
-          "#header", //
-          ".sectionA", //
-          ".sectionC", //
-          ".hidden", //
-          ".teaser", //
-          ".socialMedia", //
-          "#footer" //
+    public boolean supportsArticle() {
+        return true;
+    }
 
+    @Override
+    public List<String> getRemovableElements() {
+        final List<String> removableElements = super.getRemovableElements();
+        removableElements.addAll(List.of(
+                        "link[rel*='']", //
+                        "link[style*='']", //
+                        "meta[property*='']", //
+                        "meta[name*='']" //
+                )
         );
+        return removableElements;
     }
 }
