@@ -28,7 +28,7 @@ public class Focus extends SupportedPage {
 
     @Override
     public boolean supportsArticle() {
-        return false;
+        return true;
     }
 
     @Override
@@ -43,56 +43,12 @@ public class Focus extends SupportedPage {
         removableElements.add("meta[property*='']");
         removableElements.add("meta[name*='']");
         removableElements.add("link[rel*='']");
-        removableElements.add("header");
-        removableElements.add("footer");
-        removableElements.add("#special-header-v2");
-        removableElements.add("#skyscraper");
-        removableElements.add("#servicev2");
-        removableElements.add("#newsbreadcrumb");
-        removableElements.add("#article-social");
-        removableElements.add("#comment-wrapper");
-        removableElements.add("#socialicons_sticky");
-        removableElements.add("#inactivity_layer_bg");
-        removableElements.add("#print_image_info");
-        removableElements.add("#teaserRss");
-        removableElements.add("#sidebar");
-        removableElements.add("nav");
-        removableElements.add("input");
-        removableElements.add("svg");
-        removableElements.add(".nocontent");
-        removableElements.add(".hidden-lg");
-        removableElements.add(".groupon-list-container");
-        removableElements.add(".Ad-Slot-Sticky--Right");
+        removableElements.add(".Article-Overhead");
         removableElements.add(".Ad-Slot");
-        removableElements.add(".Social-Widget");
-        removableElements.add(".Ad-Carousel");
-        removableElements.add(".Ad-Slot-970-Container");
+        removableElements.add(".Social-Sharing-Container");
         removableElements.add(".Ad-Slot-Sticky-Container");
-        removableElements.add(".teaser");
-        removableElements.add(".comments-banner");
-        removableElements.add(".Article-Comments-Button");
-        removableElements.add(".Article-Comments__LoginInfo");
-        removableElements.add(".Article-Comments__Title");
-        removableElements.add(".Article-Comments__AppUserActions");
-        removableElements.add(".LinkBox_InnerContainer");
-        removableElements.add("#links-box-placement-D");
-        removableElements.add(".LinksBox_Container");
-        removableElements.add(".container-article-inline-teaser");
-        removableElements.add(".topRightTickerHolder");
-        removableElements.add(".comments-background");
-        removableElements.add(".comments-panel");
-        removableElements.add(".container_multichart");
-        removableElements.add(".teaserList-2");
-        removableElements.add(".teaserList3x1");
-        removableElements.add(".teaserList2x2");
-        removableElements.add(".nl_subscription_form");
-        removableElements.add(".teaserList-ontop");
-        removableElements.add(".overhead");
-        removableElements.add(".re_textteaserlist");
-        removableElements.add(".teaserBlock");
-        removableElements.add(".orange-button-artobj");
-        removableElements.add(".article-social-border");
-        removableElements.add(".actions");
+        removableElements.add(".Article-Content-Ad-Carousel");
+        removableElements.add(".Article-ReusableText");
         return removableElements;
     }
 
