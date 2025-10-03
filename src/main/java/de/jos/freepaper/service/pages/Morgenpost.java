@@ -18,26 +18,22 @@ public class Morgenpost extends SupportedPage {
     }
 
     @Override
+    public boolean supportsArticle() {
+        return true;
+    }
+
+    @Override
     public List<String> getRemovableElements() {
         final List<String> result = super.getRemovableElements();
         result.addAll(Arrays.asList( //
-                "meta[name*='']", //
                 "link[rel*='']", //
-                "style", //
-                "script", //
-                "noscript", //
-                "header", //
-                "aside", //
+                "meta[name*='']", //
+                "meta[property*='']", //
+                ".not-prose", //
                 "nav", //
-                "figure", //
-                "iframe", //
-                ".mwPlayerContainer", //
-                ".abo-login", //
-                ".content--teaser--container", //
-                "footer" //
+                "aside" //
         ));
         return result;
     }
-
 
 }
