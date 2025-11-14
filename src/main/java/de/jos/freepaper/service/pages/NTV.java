@@ -2,7 +2,6 @@ package de.jos.freepaper.service.pages;
 
 import de.jos.freepaper.service.SupportedPage;
 
-import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -21,40 +20,27 @@ public class NTV extends SupportedPage {
     }
 
     @Override
+    public boolean removeEmptyTags() {
+        return true;
+    }
+
+    @Override
+    public boolean supportsArticle() {
+        return true;
+    }
+
+    @Override
     public List<String> getRemovableElements() {
-        return Arrays.asList( //
-                "meta[content*='']", //
-                "link", //
-                "base", //
-                "iframe", //
-                "script", //
-                "noscript", //
-                "figure", //
-                "img", //
-                "header", //
-                "footer", //
-                "interaction", //
-                "nav", //
-                "style", //
-                "select", //
-                ".article__share--meldung", //
-                ".article__aside--extcontent", //
-                ".article__aside--right", //
-                ".article__tags", //
-                ".article__related", //
-                ".article__share-wrapper", //
-                ".article__audioicon", //
-                ".article__audioplayer", //
-                ".title--dark", //
-                ".teaser--video", //
-                ".article--video", //
-                ".article__author", //
-                ".article__audio-share", //
-                "section.sitemap", //
-                ".linklist", //
-                ".newcontent-note", //
-                ".sidebar" //
-        );
+        final List<String> removableElements = super.getRemovableElements();
+        removableElements.addAll(List.of(
+                "meta[content*='']", //,
+                "link[rel*='']", //,
+                "[class^=article-detail-footer_tags]", //,
+                "[class^=social-share_social-share]", //,
+                "aside", //,
+                "header",
+                "footer"));
+        return removableElements;
     }
 
 }
