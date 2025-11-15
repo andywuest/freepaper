@@ -38,6 +38,7 @@ public class NTV extends SupportedPage {
                 "[class^=article-detail-footer_tags]", //,
                 "[class^=social-share_social-share]", //,
                 "aside", //,
+                "nav", //,
                 "header",
                 "footer"));
         return removableElements;
