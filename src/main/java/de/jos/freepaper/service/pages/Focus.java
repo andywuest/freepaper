@@ -13,6 +13,7 @@ public class Focus extends SupportedPage {
 
     @Override
     public String getName() {
+
         return "focus.de";
     }
 
@@ -49,6 +50,7 @@ public class Focus extends SupportedPage {
         removableElements.add(".Ad-Slot-Sticky-Container");
         removableElements.add(".Article-Content-Ad-Carousel");
         removableElements.add(".Article-ReusableText");
+        removableElements.add(".Html-Block-Container");
         return removableElements;
     }
 
