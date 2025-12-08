@@ -27,15 +27,19 @@ public class BerlinerZeitung extends SupportedPage {
     }
 
     @Override
+    public boolean supportsArticle() {
+        return true;
+    }
+
+    @Override
     public List<String> getRemovableElements() {
         List<String> removableElements = super.getRemovableElements();
         removableElements.add("link[rel*='']");
         removableElements.add("meta[name*='']");
         removableElements.add("meta[http-equiv*='']");
         removableElements.add("meta[property*='']");
-        removableElements.add("script");
-        removableElements.add("figure");
-        removableElements.add("img");
+        removableElements.add("meta[property*='']");
+        removableElements.add("[class^=tags-widget_wrapper]");
         removableElements.add(".main-header-wrapper");
         removableElements.add(".o-footer");
         removableElements.add(".m-sidebartitle__text");
