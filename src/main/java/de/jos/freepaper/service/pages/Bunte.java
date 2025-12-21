@@ -5,11 +5,11 @@ import de.jos.freepaper.service.SupportedPage;
 import java.util.Arrays;
 import java.util.List;
 
-public class Deutschlandfunk extends SupportedPage {
+public class Bunte extends SupportedPage {
 
     @Override
     public String getName() {
-        return "deutschlandfunk.de";
+        return "bunte.de";
     }
 
     @Override
@@ -24,20 +24,27 @@ public class Deutschlandfunk extends SupportedPage {
 
     @Override
     public List<String> getRemovableElements() {
-        final List<String> removableElements = super.getRemovableElements();
-        removableElements.addAll(Arrays.asList(
+        final List<String> result = super.getRemovableElements();
+        result.addAll(Arrays.asList( //
                 "meta[name*='']", //
                 "meta[property*='']", //
                 "meta[http-equiv*='']", //
                 "link[rel*='']", //
+                "header", //
                 "nav", //
+                "meta", //
                 "footer", //
-                ".header-links", //
-                ".b-thema-teaser-list", //
-                ".b-article-extended-emphasis", //
-                ".article-header-actions" //
+                ".Article-Image", //
+                ".Ad-Carousel", //
+                ".Ad-Slot", //
+                ".Article-ArticlesBox", //
+                ".Ad-Slot-Sticky-Container", //
+                ".LinkBox_ForDesktop", //
+                ".Ad-Slot-Sticky--Right", //
+                ".Article-Content-Gallery" //
+
         ));
-        return removableElements;
+        return result;
     }
 
 }
