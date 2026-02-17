@@ -28,6 +28,7 @@ public class SchwaebischeZeitung extends SupportedPage {
         removableElements.add("script");
         removableElements.add("style");
         removableElements.add("svg");
+        removableElements.add("hr");
         removableElements.add("img");
         removableElements.add("list");
         removableElements.add("figure");
@@ -36,6 +37,7 @@ public class SchwaebischeZeitung extends SupportedPage {
         removableElements.add("button");
         removableElements.add("footer");
         removableElements.add(".sve-teaser_small");
+        removableElements.add(".breadcrumbs-wrapper");
         return removableElements;
     }
 

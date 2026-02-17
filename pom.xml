@@ -157,9 +157,9 @@
     </build>
 
     <properties>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
-        <dropwizard.version>2.1.4</dropwizard.version>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <dropwizard.version>2.1.12</dropwizard.version>
         <dropwizard.metrics.version>4.2.0</dropwizard.metrics.version>
         <dropwizard.views.freemarker>2.1.4</dropwizard.views.freemarker>
         <jsoup.version>1.10.3</jsoup.version>
