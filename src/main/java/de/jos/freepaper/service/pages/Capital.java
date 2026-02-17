@@ -13,8 +13,8 @@ public class Capital extends SupportedPage {
     }
 
     @Override
-    public String getPrintURL(String url) {
-        return url;
+    public boolean removeEmptyTags() {
+        return true;
     }
 
     @Override
@@ -25,24 +25,35 @@ public class Capital extends SupportedPage {
                         "meta[name*='']", //
                         "meta[property*='']", //
                         "link[rel*='']", //
-                        ".header page__header", //
-                        "figure", //
-                        "dialog", //
-                        "img", //
-                        ".header__meta", //
-                        ".slide-navigation", //
-                        ".ad-container", //
-                        ".ad-placeholder", //
+                        "nav", //
                         "header", //
-                        ".footer", //
-                        ".article__tags", //
-                        "x-drawer", //
-                        "x-bookmarkbutton", //
-                        "x-snackbar", //
-                        "x-token", //
-                        ".article__sidebar", //
+                        "footer", //
+                        "ws-adtag", //
+                        "ws-dialog", //
+                        "ws-scroller", //
+                        "ws-link", //
+                        "ws-messagehandler", //
+                        "ws-copylink", //
+                        "ws-vgwort", //
+                        "ws-nielsen", //
+                        "ws-gtm", //
+                        "ws-push", //
+                        "ws-iframeresizer", //
+                        "ws-user", //
+                        "ws-sourcepoint", //
+                        "ws-upscore", //
+                        "ws-snackbar", //
+                        "ws-netid", //
+                        "ws-outbrain", //
+                        "ws-paywallcontrol", //
+                        "ws-adscript", //
+                        "ws-drawer", //
+                        ".tags", //
+                        ".group-teaser-gallery", //
                         ".article__end", //
-                        ".article__embedded-teasers" //
+                        ".teaser", //
+                        ".teaser-plaintext", //
+                        ".ad-container" //
 
                 )
         );
