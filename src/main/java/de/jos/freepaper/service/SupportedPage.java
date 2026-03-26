@@ -43,6 +43,8 @@ public abstract class SupportedPage {
                 "img",
                 "svg",
                 "figcaption",
+                "input",
+                "select",
                 "button"
         ));
     }

@@ -53,6 +53,11 @@ public class Stern extends SupportedPage {
                 "ws-vgwort", //
                 "ws-nielsen", //
                 "ws-gtm", //
+                "ws-texttospeech", //
+                "ws-fetch", //
+                "ws-sticky-header", //
+                "ws-article-progress-bar", //
+                "ws-zephr", //
                 "x-gallery-scroller", //
                 "x-bookmarkbutton", //
                 "x-snackbar", //
