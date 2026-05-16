@@ -11,7 +11,7 @@ public class SternTest extends AbstractPageTest {
 
     final SupportedPage page = new Stern();
 
-    private static final String URL = "https://www.stern.de/kultur/tv/-sommerhaus-der-stars---warum-man-lisha-keine-plattform-geben-sollte-9457830.html";
+    private static final String URL = "https://www.stern.de/kultur/film/sydney-sweeney--onlyfans-models-entsetzt-ueber-szenen-in--euphoria--37387488.html";
 
     @Test
     public void getDownload() {

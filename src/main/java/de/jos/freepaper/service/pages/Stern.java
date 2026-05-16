@@ -21,6 +21,11 @@ public class Stern extends SupportedPage {
     }
 
     @Override
+    public boolean removeEmptyTags() {
+        return true;
+    }
+
+    @Override
     public List<String> getRemovableElements() {
         final List<String> elements = super.getRemovableElements();
 
@@ -41,6 +46,7 @@ public class Stern extends SupportedPage {
                 "time", //
                 "dialog", //
                 "ws-drawer", //
+                "ws-next-content", //
                 "ws-adtag", //
                 "ws-paywallcontrol", //
                 "ws-adscript", //
@@ -55,13 +61,25 @@ public class Stern extends SupportedPage {
                 "ws-gtm", //
                 "ws-texttospeech", //
                 "ws-fetch", //
+                "ws-user", //
+                "ws-subx", //
+                "ws-netid", //
+                "ws-snackbar", //
+                "ws-messagehandler", //
                 "ws-sticky-header", //
                 "ws-article-progress-bar", //
+                "ws-copylink", //
+                "ws-logora-widget", //
+                "ws-dot-indicator", //
+                "ws-scroller", //
                 "ws-zephr", //
                 "x-gallery-scroller", //
                 "x-bookmarkbutton", //
                 "x-snackbar", //
                 "x-token", //
+                ".authors", //
+                ".tags", //
+                ".ad-container", //
                 ".breadcrumb", //
                 ".group__embedded-teasers", //
                 ".article__end", //
