@@ -24,7 +24,6 @@ public class Fool extends SupportedPage {
     @Override
     public List<String> getRemovableElements() {
         final List<String> removableElements = super.getRemovableElements();
-        // "ticker-bar"
         removableElements.addAll(List.of( //
                 "meta[name*='']", //
                 "meta[property*='']", //

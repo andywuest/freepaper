@@ -9,7 +9,7 @@ public class ForbesTest extends AbstractPageTest {
 
     @Test
     public void getDownload() {
-        final String url = "https://www.forbes.com/sites/zakdoffman/2019/06/13/huawei-testing-russias-aurora-os-as-complete-android-replacement-report-claims/?sh=744fb0ae6875";
+        final String url = "https://www.forbes.com/sites/greatspeculations/2026/04/15/how-oracle-stock-could-rise-to-300/";
         performDownload(page, url);
     }
 }
